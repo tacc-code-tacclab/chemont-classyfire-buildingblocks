@@ -1,0 +1,179 @@
+[20260722_013508] === V4 RUN START (Claude, prompt_claude_chemont_v5_corrected.md) ===
+[20260722_013508] Env: conda ptrag_bcrabl, python 3.12.13, rdkit 2026.03.2
+[20260722_013508] Git: branch main, no commits yet, all files untracked (pre-existing V1-V3 work preserved).
+[20260722_013508] Phase 0.5 CONNECTIVITY AUDIT: outbound network AVAILABLE.
+[20260722_013508]   classyfire.wishartlab.com/entities/{ik}.json -> HTTP 200, application/json, genuine ClassyFire (kingdom/superclass/class/subclass).
+[20260722_013508]   cfb.fiehnlab.ucdavis.edu/entities/{ik}.json -> HTTP 200, application/json, genuine ClassyFire w/ direct_parent+alternative_parents.
+[20260722_013508]   https on wishartlab -> 000 (cert/redirect); http works. gnps-classyfire.ucsd.edu -> unreachable.
+[20260722_013508] Inventory: compounds table = 1,956,542 unique standardised structures, all with InChIKey; 323,576 with official ZINC IDs.
+[20260722_013508] ChemOnt_2_1.obo present: data-version 2.1, 4825 [Term] entries.
+[20260722_013508] NOTE: No prior "V3 61-rule ChemOnt mapper" material found in workspace; local prior work is dag-rdkit-rules-1.1.1 (29-class DAG). Phase 0 V3 reproduction cannot be run against absent artefacts; documented.
+[20260722_014028] Phase2a: building sample n=5000 seed=20260722 from chemical_taxonomy_zinc.db
+[20260722_014033] Phase2a: sample built, 5000 unique inchikeys (pool of 1955032 distinct inchikeys)
+[20260722_014034] Phase2a: probe start n=5000 already_cached=0 todo=5000 rps=4.0 workers=4
+[20260722_014105] Phase2a: probe start n=5000 already_cached=0 todo=5000 rps=4.0 workers=4
+[20260722_014453] Phase2a: probe start n=5000 already_cached=50 todo=4950 rps=0.5 workers=1
+[20260722_015126] === RE-BASELINED to prompt_claude_chemont_v5_resources.md (authoritative). Old prompts = history only. ===
+[20260722_015126] resources/ audited w/ sha256. Duplicates byte-identical: benchmark_report.md==(1), pilot_chemont_v3.zip==(1), showcase.html==(1). Two ChatGPT PNGs differ (non-scientific, ignored).
+[20260722_015126] Extracted ChemOnt_2_1.obo from resources archive -> sha256 8616a6ec...; BYTE-IDENTICAL to data/external/chemont/ChemOnt_2_1.obo already parsed. Layer A parse valid & canonical.
+[20260722_015126] Extracted pilot_chemont_v3.zip (61-rule mapper + genuine OOD ClassyFire ground truth 1266 organic).
+[20260722_015126] PHASE 0 V3 REPRODUCTION (independent, obonet shim, unmodified harness): EXACT match on all metrics -> n=1266, on_path 49.2%, any_match 63.0%, exact_leaf 8.7%, superclass 65.3%, class 55.9%. Confirms real ChemOnt IDs + canonical lineages. reports/v4/v3_reproduction_metrics.json.
+[20260722_015138] Phase2a: probe start n=5000 already_cached=50 todo=4950 rps=0.35 workers=1
+[20260722_015441] Phase2a: probe start n=5000 already_cached=51 todo=4949 rps=0.6 workers=1
+[20260722_015441] Phase2a pass 1: 4949 keys remaining
+[20260722_015902] Phase3: built classyfire_ground_truth n=58 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260722_020451] Phase2b: building full-pool queue seed=20260722
+[20260722_020504] Phase2b: queue built n=1955032
+[20260722_021053] Phase3: built classyfire_ground_truth n=111 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260722_021211] Phase2b daemon running (tmux dag_acquire, rps0.35, target 450k HITs). Phase3 GT rebuilt n=111. LayerA crosscheck: 140 genuine (id,name) pairs, 0 mismatch vs OBO. Phase7 preliminary target-domain benchmark n=111: superclass 68.5%, class 49.5%, exact 13.5%, on_path 44.1%, any_match 63.1%. dag_v4.db populated (chemont_nodes/edges, classyfire_ground_truth, provenance).
+[20260722_021454] V4 session deliverables complete: 8 reports + 6 scripts + parquet GT/input + dag_v4.db. Phase2b daemon (tmux dag_acquire) left running for continued acquisition.
+[20260722_133813] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260722_134100] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260722_135112] UNATTENDED SETUP COMPLETE. crontab: watchdog */15 (keep-alive+resume), report_job 0 */6 (rebuild GT+benchmark+coverage+progress.log). Daemon acquire_ground_truth.py target=200000 rps=0.3 single-stream, lock-guarded (logs/v4/acquire.lock), WAL, self-pruning queue (never re-queries cached), exp backoff+jitter on 429/5xx, escalating cooldown, sustained-throttle early-break. Stops at 200k or pool-exhaustion -> ACQUISITION_COMPLETE sentinel -> finalize_on_complete.py (freeze GT + scaffold split 0-leakage + held-out Phase7 + novelty strata + FINALIZED) then PAUSE (no production annotation).
+[20260722_135112] VERIFIED: singleton lock (2nd instance exits); watchdog kill->relaunch resumed from hits=4372 (not zero); report_job appended progress.log; finalize --preview OK (train/val/test 3051/663/658, scaffold_leakage=0, held-out superclass 0.784). wishartlab temporarily throttling post-testing; daemon backing off correctly.
+[20260722_180001] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260723_000002] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260723_060002] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260723_120002] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260723_180002] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260724_000002] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260724_060001] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260724_120002] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260724_180002] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260725_000001] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260725_060001] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260725_120001] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260725_180001] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260726_000002] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260726_060001] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260726_120002] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260726_180002] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260727_000001] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260727_060001] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260727_120002] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260727_180002] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260728_000002] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260728_060001] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260728_120001] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260728_180001] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260729_000002] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260729_060002] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260729_120001] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260729_180002] Phase3: built classyfire_ground_truth n=4372 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[2026-07-29] INCIDENT + FIX (acquisition stuck ~7 days).
+  Symptom: daemon alive since 2026-07-22 but HITs frozen at 4372; acquire_stats.log showed 340x "sustained throttle -> cooldown 1800s".
+  Root cause: classyfire.wishartlab.com CHANGED behaviour for InChIKeys it cannot classify: it now returns HTTP 500 (previously HTTP 404). ~45% of the pool. fetch_one treated 5xx as throttling (retry -> THROTTLED -> 30-min cooldown), so after 10 consecutive 500s it cooled down forever and never reached HIT keys. NOT a real rate-limit/ban (verified: aspirin/known-HIT keys still return 200; unknown keys return 500 via both curl and urllib).
+  Fix: fetch_one now treats persistent 5xx as a DEFINITIVE non-hit outcome "SERVER5XX" (no retry); only HTTP 429 counts as throttle/cooldown. Daemon caches SERVER5XX + removes from queue (advances). commit interval 50->25. rps 0.3->0.5.
+  Verified: queue advancing, throttled=0, HITs resumed (4372 -> 4392+). Cron/watchdog/report unchanged and still installed.
+[20260730_000002] Phase3: built classyfire_ground_truth n=5032 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260730_060002] Phase3: built classyfire_ground_truth n=7340 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[2026-07-30] SPEEDUP: acquisition switched to TWO parallel host-streams (wishartlab + fiehnlab), queue partitioned by ord%2 (no key queried twice), per-host rate limit rps=0.4 + independent cooldowns. fiehnlab reachable/fast (~1s), no throttle at 0.4/s, returns clean 404 for misses (vs wishartlab 500), same HIT coverage. Measured: 0.27 HIT/s (~23k/day) vs 0.105 single-host = ~2.6x. throttled=0. Watchdog updated to --sources wishartlab,fiehnlab --rps 0.4. Old single-host script backed up as acquire_ground_truth.py.old_20260730_102540.
+[20260730_120002] Phase3: built classyfire_ground_truth n=10168 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[2026-07-30] SPEEDUP ATTEMPT to 5-6d: no viable 3rd ClassyFire host (gnps-classyfire down 503; classyfire.gnps2.org 500 on known hit; npclassifier = different taxonomy, ineligible). fiehnlab throttles >~0.45/s (9/20 429 at 1.0/s); wishartlab edge ~0.4. Empirical net HIT/s: 0.4/0.4 -> 0.270; 0.45/0.5 -> 0.217 (WORSE: higher rps => more 429-backoff => lower net). Conclusion: two public hosts are saturated at ~0.27 HIT/s (~8 days); 5-6 days NOT achievable without allowlist/local-dump/Fiehn-batch. Set optimal per-host rps wishartlab=0.4,fiehnlab=0.45. Added per-host --rps parsing to daemon.
+[20260730_180002] Phase3: built classyfire_ground_truth n=14297 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260731_000002] Phase3: built classyfire_ground_truth n=18249 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260731_060003] Phase3: built classyfire_ground_truth n=22497 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260731_120002] Phase3: built classyfire_ground_truth n=26968 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260731_180003] Phase3: built classyfire_ground_truth n=31447 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260801_000004] Phase3: built classyfire_ground_truth n=35982 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260801_060003] Phase3: built classyfire_ground_truth n=40530 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260801_120004] Phase3: built classyfire_ground_truth n=44874 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260801_180005] Phase3: built classyfire_ground_truth n=49425 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260802_000004] Phase3: built classyfire_ground_truth n=54055 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260802_060004] Phase3: built classyfire_ground_truth n=58761 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260802_120005] Phase3: built classyfire_ground_truth n=63347 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260802_180005] Phase3: built classyfire_ground_truth n=67679 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260803_000005] Phase3: built classyfire_ground_truth n=72326 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260803_060005] Phase3: built classyfire_ground_truth n=76744 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260803_120005] Phase3: built classyfire_ground_truth n=80160 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260803_180005] Phase3: built classyfire_ground_truth n=84810 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260804_000006] Phase3: built classyfire_ground_truth n=89189 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260804_060006] Phase3: built classyfire_ground_truth n=93587 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260804_120006] Phase3: built classyfire_ground_truth n=97790 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260804_180006] Phase3: built classyfire_ground_truth n=102350 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260805_000008] Phase3: built classyfire_ground_truth n=106715 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260805_060007] Phase3: built classyfire_ground_truth n=111266 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260805_120007] Phase3: built classyfire_ground_truth n=115525 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260805_180007] Phase3: built classyfire_ground_truth n=119461 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260806_000008] Phase3: built classyfire_ground_truth n=124006 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260806_060008] Phase3: built classyfire_ground_truth n=128312 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260806_120011] Phase3: built classyfire_ground_truth n=132705 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260806_180008] Phase3: built classyfire_ground_truth n=136302 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260807_000008] Phase3: built classyfire_ground_truth n=140207 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260807_060009] Phase3: built classyfire_ground_truth n=143992 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260807_120012] Phase3: built classyfire_ground_truth n=147941 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260807_180009] Phase3: built classyfire_ground_truth n=151867 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260808_000009] Phase3: built classyfire_ground_truth n=156198 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260808_060010] Phase3: built classyfire_ground_truth n=160809 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260808_120010] Phase3: built classyfire_ground_truth n=165381 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260808_180010] Phase3: built classyfire_ground_truth n=170047 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260809_000010] Phase3: built classyfire_ground_truth n=174625 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260809_060010] Phase3: built classyfire_ground_truth n=179195 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260809_120010] Phase3: built classyfire_ground_truth n=183816 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260809_180011] Phase3: built classyfire_ground_truth n=188421 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260810_000011] Phase3: built classyfire_ground_truth n=193050 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260810_060011] Phase3: built classyfire_ground_truth n=197718 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260810_090533] Phase2b: COMPLETE reason=target_reached hits=200001
+[20260810_120011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260810_120104] FINALIZED: frozen GT n=200001, scaffold split {'train': 130930, 'test': 39021, 'validation': 30050}, held-out test superclass=0.723943517593091 class=0.5953994660094475 exact=0.13021193716204096. Production annotation PAUSED pending human confirmation.
+[20260810_180013] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260811_000012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260811_060012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260811_120012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260811_180011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260812_000011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260812_060012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260812_120021] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260812_180011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260813_000011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260813_060012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260813_120011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260813_180011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260814_000011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260814_060012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260814_120011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260814_180012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260815_000012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260815_060011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260815_120011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260815_180011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260816_000012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260816_060012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260816_120011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260816_180011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260817_000011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260817_060011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260817_120012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260817_180011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260818_000026] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260818_060024] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260818_120024] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260818_180023] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260819_000012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260819_060026] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260819_120015] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260819_180015] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260820_000029] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260820_060022] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260820_120024] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260820_180028] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260821_000019] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260821_060014] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260821_120012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260821_180016] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260822_000014] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260822_060012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260822_120011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260822_180012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260823_000011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260823_060011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260823_120013] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260823_180033] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260824_000012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260824_060011] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260824_120012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260824_180012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260825_000012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260825_060012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[20260825_120012] Phase3: built classyfire_ground_truth n=200001 genuine hits; ontology-id-flagged=0; -> dag_v4.db, classyfire_ground_truth.parquet
+[2026-08-25] RESUME after server reboot. Verified acquisition already COMPLETE (2026-08-10 09:05, target_reached, 200001 genuine HITs) and FINALIZED (2026-08-10 12:11): frozen GT (200001, 41368 scaffolds), scaffold split train/val/test=130930/30050/39021 (0 leakage), held-out Phase7 benchmark superclass 0.724 / class 0.595 / exact 0.130 (below 0.90/0.75/0.60 targets -> mapper NOT production-ready, mass annotation still PAUSED pending human OK). Nothing to redo; reboot lost nothing (all persisted). Produced the requested one-page mini report for Tiansi & Pietro: reports/v4/mini_report_tiansi_pietro.tex + .pdf (compiled with tectonic, 1 page, plain language).

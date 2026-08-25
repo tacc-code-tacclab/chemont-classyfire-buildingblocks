@@ -1,0 +1,31 @@
+{
+  "obo_path": "/data01/cris/projects/DAG/data/external/chemont/ChemOnt_2_1.obo",
+  "data_version": "2.1",
+  "n_terms": 4825,
+  "n_roots": 1,
+  "roots": [
+    "CHEMONTID:9999999"
+  ],
+  "n_multi_parent": 0,
+  "n_edges_is_a": 4824,
+  "n_obsolete": 0,
+  "n_dangling_parents": 0,
+  "dangling_parents": [],
+  "n_cycle_nodes": 0,
+  "max_depth": 11,
+  "depth_histogram": {
+    "0": 1,
+    "1": 2,
+    "2": 31,
+    "3": 765,
+    "4": 1729,
+    "5": 1200,
+    "6": 738,
+    "7": 248,
+    "8": 82,
+    "9": 21,
+    "10": 7,
+    "11": 1
+  },
+  "acyclic": true
+}

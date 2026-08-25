@@ -1,0 +1,19 @@
+{
+  "reproduced": {
+    "n_organic": 1266,
+    "on_path": 49.21011058451817,
+    "any_match": 62.95418641390206,
+    "exact_leaf": 8.688783570300158,
+    "superclass": 65.32385466034755,
+    "class": 55.88932806324111
+  },
+  "v3_report_expected": {
+    "n_organic": 1266,
+    "on_path": 49.2,
+    "any_match": 63.0,
+    "exact_leaf": 8.7,
+    "superclass": 65.3,
+    "class": 55.9
+  },
+  "n_ground_truth_rows_total": null
+}

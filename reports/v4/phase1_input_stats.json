@@ -1,0 +1,25 @@
+{
+  "n_rows": 1956542,
+  "n_unique_inchikey": 1955032,
+  "n_with_zinc_id": 1956542,
+  "n_catalogs": 28,
+  "mw_min": 2.016,
+  "mw_med": 253.301,
+  "mw_max": 13576.803,
+  "top_catalogs": {
+    "enaminebb": 983489,
+    "ryanbb": 415468,
+    "combiblocksbb": 179673,
+    "princetonbb": 88176,
+    "achemblock": 60412,
+    "keyobb": 37380,
+    "bidebb": 32968,
+    "sciexbb": 20994,
+    "apollobb": 18569,
+    "sialbb": 17673,
+    "molportbb": 17169,
+    "arkbb": 16531
+  },
+  "parquet": "/data01/cris/projects/DAG/data/v4_classyfire_groundtruth/zinc_unique_structures.parquet",
+  "size_mb": 248.3
+}

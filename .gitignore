@@ -1,0 +1,29 @@
+# ---- Large and/or license-restricted data: NOT pushed to GitHub ----
+# ZINC building-block structures and ClassyFire labels are not redistributable
+# (see README "Licensing and protected data"); also multi-GB. Kept local only.
+data/
+database/
+taxonomy/
+results/
+external_repositories/
+resources/
+
+# ---- Logs (kept local; large / may be verbose) ----
+logs/
+
+# ---- Backups, caches, temp ----
+*.old_*
+__pycache__/
+*.pyc
+*.pyo
+.chebi_audit_initial.tmp
+*.db
+*.db-shm
+*.db-wal
+*.parquet
+
+# ---- Exceptions: small, shareable artefacts we DO want in the repo ----
+# (re-included explicitly with `git add -f`)
+!database/v4/chemont_nodes.tsv
+!database/v4/chemont_edges.tsv
+!logs/v4/agent_actions.log

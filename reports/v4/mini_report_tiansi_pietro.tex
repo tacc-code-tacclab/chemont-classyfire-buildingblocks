@@ -1,0 +1,117 @@
+\documentclass[11pt]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=blue!55!black, linkcolor=black}
+\titlespacing*{\section}{0pt}{7pt}{2pt}
+\titleformat{\section}{\large\bfseries\color{black!80}}{}{0pt}{}
+\setlist{nosep,leftmargin=1.4em}
+\pagestyle{empty}
+\newcommand{\gh}{https://github.com/tacc-code-tacclab/chemont-classyfire-buildingblocks}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries Chemical labels for our molecule catalogue}\\[3pt]
+{\normalsize A short guide for Tiansi \& Pietro \hfill \today}
+\end{center}
+\vspace{-3pt}\hrule\vspace{7pt}
+
+\section*{1. The goal (in plain words)}
+We have a catalogue of about \textbf{1.95 million commercial ``building-block'' molecules}
+(small chemical parts used to assemble bigger molecules). Our downstream AI generator needs a
+reliable \emph{category label} for each building block --- like tagging every item in a huge
+warehouse with the correct department, aisle and shelf. The generator uses these tags as
+\textbf{rules}, so the tags must be \textbf{correct, not guessed}. The official tagging system we
+use is called \textbf{ChemOnt / ClassyFire}.
+
+Two concrete goals: \textbf{(1)} collect a large set of \emph{genuine} (officially computed) tags
+for our building blocks; \textbf{(2)} check whether a fast in-house ``auto-tagger'' can reproduce
+those tags well enough to one day tag all 1.95M molecules automatically.
+
+\section*{2. How the chemical families are structured (important)}
+The families are organised as a \textbf{strict tree} --- a rooted hierarchy --- \emph{not} a
+free-form network or web. Concretely:
+\begin{itemize}
+  \item Every category has \textbf{exactly one parent}, and every category traces back to a
+        \textbf{single root} called ``Chemical entities''. We verified this on the real file:
+        \textbf{4{,}825 categories}, one root, \textbf{zero} categories with two parents, no loops,
+        up to \textbf{11 levels} deep.
+  \item So a molecule's classification is a \textbf{single path from the root down to a specific
+        family}, exactly like \emph{Department $\rightarrow$ Aisle $\rightarrow$ Shelf}. Broad
+        levels have names like \emph{kingdom, superclass, class, subclass}.
+\end{itemize}
+
+\begin{tcolorbox}[colback=blue!4,colframe=blue!30,boxrule=0.4pt,left=6pt,right=6pt,top=4pt,bottom=4pt]
+{\footnotesize\textbf{Real example} (one of our building blocks). Its path down the tree:}\\[2pt]
+{\footnotesize\texttt{Chemical entities $\rightarrow$ Organic compounds $\rightarrow$ Benzenoids
+$\rightarrow$ Benzene and substituted derivatives $\rightarrow$ Benzonitriles}}
+\end{tcolorbox}
+\vspace{2pt}
+\emph{Small nuance:} the tree above is the fixed backbone. On top of it, ClassyFire may also list a
+few ``related families'' for a molecule as extra context (so a molecule can point to more than one
+family), but the backbone itself stays a clean tree. Our auto-tagger mirrors this: it picks one
+primary family (a leaf of the tree) plus a few alternatives.
+
+\section*{3. What we did (methods)}
+\begin{itemize}
+  \item \textbf{Fixed reference.} We used the complete official ChemOnt tree, unchanged, as the
+        ground-truth backbone. We store it as two simple tables: the \emph{categories} (nodes) and
+        the \emph{parent$\rightarrow$child links} (edges) that make up the tree.
+  \item \textbf{Genuine tags only.} We downloaded real tags from two official public services, one
+        molecule at a time, \emph{politely} (respecting their speed limits), fully automatic and
+        restart-safe. The collection ran for about two weeks. We never invented a tag.
+  \item \textbf{An honest test.} We split the tagged molecules by their chemical ``skeleton'' so the
+        test set contains molecule types the auto-tagger never saw during development --- no
+        overlap between what it learns from and what it is judged on.
+\end{itemize}
+
+\section*{4. What we found (results)}
+Collected \textbf{200{,}001 genuine tags} (target reached), spanning \textbf{26 broad families},
+\textbf{425 categories} and \textbf{1{,}977 fine categories}. This large, trustworthy dataset is
+the hard part, and it is done. On a held-out test of \textbf{39{,}021 unseen molecules}, the fast
+auto-tagger scores:
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+ & \textbf{auto-tagger (test)} & \textbf{our quality bar} & \textbf{good enough?} \\
+\midrule
+Broad family correct   & 72\% & 90\% & not yet \\
+Category correct       & 60\% & 75\% & not yet \\
+Exact fine tag correct & 13\% & 60\% & not yet \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent\textbf{What it means \& next steps.} The genuine dataset is ready and reliable. The fast
+auto-tagger is a useful draft but \textbf{not accurate enough yet} to tag all 1.95M molecules
+automatically: doing so now would feed some wrong rules to the generator. So we deliberately
+\textbf{stop before mass auto-tagging} and wait for a human go-ahead. \textbf{Next:} use the 200k
+genuine tags to improve the auto-tagger, then re-test against the same honest benchmark; scale up
+only once it clears the quality bar.
+
+\section*{5. Where to look on GitHub}
+Repository: \href{\gh}{\texttt{github.com/tacc-code-tacclab/chemont-classyfire-buildingblocks}}
+\begin{itemize}
+  \item \href{\gh/tree/main/scripts/v4}{\texttt{scripts/v4/}} --- the main code (data collection,
+        the ChemOnt tree parser, the benchmark, the finalisation).
+  \item \href{\gh/tree/main/reports/v4}{\texttt{reports/v4/}} --- all reports and result numbers
+        (this document is \texttt{mini\_report\_tiansi\_pietro.pdf}).
+  \item \href{\gh/tree/main/database/v4}{\texttt{database/v4/}} --- the ChemOnt tree itself as two
+        tables: \texttt{chemont\_nodes.tsv} (the 4{,}825 categories) and
+        \texttt{chemont\_edges.tsv} (the parent$\rightarrow$child links).
+  \item \texttt{src/}, \texttt{scripts/}, \texttt{tests/} --- supporting code and checks.
+\end{itemize}
+{\footnotesize\emph{Note:} the raw ZINC structures and the genuine ClassyFire labels are \textbf{not}
+on GitHub --- they are large (multi-GB) and their licences restrict redistribution. They live on the
+lab server under \texttt{data/v4\_classyfire\_groundtruth/} (genuine tags, train/validation/test
+splits) and \texttt{database/v4/dag\_v4.db}. GitHub holds the code, the reports, and the tree
+structure so you can review exactly how everything was done.}
+
+\end{document}

@@ -1,0 +1,15 @@
+name: ptrag_bcrabl
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.13
+  - rdkit=2026.03.2
+  - numpy=2.4.3
+  - scipy=1.17.1
+  - matplotlib=3.10.9
+  - requests=2.33.1
+  - pip=26.1.1
+  - pip:
+      - pandas==2.3.3
+      - networkx==3.6.1
+      - duckdb==1.5.4
