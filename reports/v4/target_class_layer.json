@@ -1,0 +1,45 @@
+{
+  "layer": "D_pharmacology_chembl_target (PROTOTYPE, separate from ChemOnt)",
+  "catalogue_pool": 1955032,
+  "sampled": 1200,
+  "in_chembl": 81,
+  "molecules_with_targets": 78,
+  "molecule_target_pairs": 1466,
+  "distinct_targets": 1081,
+  "coverage_of_catalogue_est": "~6.5% (~127,077 of 1.95M)",
+  "protein_family_hierarchy_available_via_REST": false,
+  "note_protein_family": "ChEMBL REST does not expose the enzyme->kinase->... tree; needs the offline ChEMBL SQL dump (PROTEIN_CLASSIFICATION/COMPONENT_CLASS).",
+  "class_axis_used": "target_type + target name + organism",
+  "single_protein_pairs_so_far": 169,
+  "target_type_distribution_partial": {
+    "SINGLE PROTEIN": 49,
+    "CELL-LINE": 2,
+    "UNCHECKED": 1,
+    "ORGANISM": 1,
+    "NO TARGET": 1,
+    "NON-MOLECULAR": 1,
+    "PROTEIN FAMILY": 1,
+    "PROTEIN-PROTEIN INTERACTION": 1,
+    "PROTEIN COMPLEX": 1
+  },
+  "top_targets": {
+    "Unchecked": 38,
+    "Plasmodium falciparum": 20,
+    "Tyrosyl-DNA phosphodiesterase 1": 11,
+    "DNA polymerase iota": 10,
+    "Geminin": 9,
+    "Chromobox protein homolog 1": 8,
+    "ADMET": 8,
+    "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short": 7,
+    "Aldehyde dehydrogenase 1A1": 7,
+    "Mothers against decapentaplegic homolog 3": 7
+  },
+  "top_organisms": {
+    "Homo sapiens": 59,
+    "Plasmodium falciparum": 21,
+    "Rattus norvegicus": 12,
+    "Mus musculus": 12,
+    "Escherichia coli K-12": 6,
+    "Photinus pyralis": 5
+  }
+}
