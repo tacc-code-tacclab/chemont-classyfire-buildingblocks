@@ -1,0 +1,906 @@
+class_id	parent_class_id	pref_name	class_level	protein_class_desc
+0		Protein class	0	protein class
+1	0.0	Enzyme	1	enzyme
+2	0.0	Adhesion	1	adhesion
+3	0.0	Secreted protein	1	secreted
+4	0.0	Structural protein	1	structural
+5	0.0	Other nuclear protein	1	nuclear other
+6	1.0	Kinase	2	enzyme  kinase
+7	0.0	Other membrane protein	1	membrane other
+8	0.0	Other cytosolic protein	1	cytosolic other
+9	0.0	Surface antigen	1	surface antigen
+10	1.0	Oxidoreductase	2	enzyme  reductase
+11	0.0	Membrane receptor	1	membrane receptor
+12	0.0	Transcription factor	1	transcription factor
+13	1031.0	Cytochrome P450 CAM family	3	enzyme  cytochrome p450  cyp_cam
+14	1136.0	Serine protease S6 family	5	enzyme  protease  serine  pas  s6
+15	1119.0	Serine protease S8A subfamily	5	enzyme  protease  serine  sb  s8a
+16	1119.0	Serine protease S8B subfamily	5	enzyme  protease  serine  sb  s8b
+18	1120.0	Serine protease S10 family	5	enzyme  protease  serine  sc  s10
+19	1120.0	Serine protease S28 family	5	enzyme  protease  serine  sc  s28
+20	1120.0	Serine protease S33 family	5	enzyme  protease  serine  sc  s33
+21	1120.0	Serine protease S9A subfamily	5	enzyme  protease  serine  sc  s9a
+22	1120.0	Serine protease S9B subfamily	5	enzyme  protease  serine  sc  s9b
+23	1121.0	Serine protease S11 family	5	enzyme  protease  serine  se  s11
+24	1121.0	Serine protease S12 family	5	enzyme  protease  serine  se  s12
+25	1121.0	Serine protease S13 family	5	enzyme  protease  serine  se  s13
+27	1123.0	Serine protease S21 family	5	enzyme  protease  serine  sh  s21
+28	1110.0	Cysteine protease C2 family	5	enzyme  protease  cysteine  ca  c2
+29	1130.0	Metallo protease M49 family	5	enzyme  protease  metallo  mae  m49
+30	1113.0	Metallo protease M79 family	5	enzyme  protease  metallo  m-  m79
+31	1130.0	Metallo protease M1 family	5	enzyme  protease  metallo  mae  m1
+33	1130.0	Metallo protease M2 family	5	enzyme  protease  metallo  mae  m2
+34	1130.0	Metallo protease M4 family	5	enzyme  protease  metallo  mae  m4
+35	1115.0	Metallo protease M17 family	5	enzyme  protease  metallo  mf  m17
+36	1117.0	Metallo protease M18 family	5	enzyme  protease  metallo  mh  m18
+37	1118.0	Metallo protease M19 family	5	enzyme  protease  metallo  mj  m19
+38	1136.0	Serine protease S1A subfamily	5	enzyme  protease  serine  pas  s1a
+40	1136.0	Serine protease S1B subfamily	5	enzyme  protease  serine  pas  s1b
+41	1136.0	Serine protease S29 family	5	enzyme  protease  serine  pas  s29
+43	1122.0	Serine protease S26A subfamily	5	enzyme  protease  serine  sf  s26a
+44	1124.0	Serine protease S60 family	5	enzyme  protease  serine  sr  s60
+45	1125.0	Protease unclassified U48 family	5	enzyme  protease  unknown  u-  u48
+47	1106.0	Aspartic protease A1A subfamily	5	enzyme  protease  aspartic  aa  a1a
+48	1106.0	Aspartic protease A2A subfamily	5	enzyme  protease  aspartic  aa  a2a
+49	1109.0	Cysteine protease C18 family	5	enzyme  protease  cysteine  cm  c18
+50	1110.0	Cysteine protease C1A family	5	enzyme  protease  cysteine  ca  c1a
+51	1110.0	Cysteine protease C2A subfamily	5	enzyme  protease  cysteine  ca  c2a
+52	1111.0	Cysteine protease C13 family	5	enzyme  protease  cysteine  cd  c13
+53	1111.0	Cysteine protease C14 family	5	enzyme  protease  cysteine  cd  c14
+54	1111.0	Cysteine protease C25 family	5	enzyme  protease  cysteine  cd  c25
+55	1130.0	Metallo protease M13 family	5	enzyme  protease  metallo  mae  m13
+57	1130.0	Metallo protease M27 family	5	enzyme  protease  metallo  mae  m27
+59	1117.0	Metallo protease M28 family	5	enzyme  protease  metallo  mh  m28
+60	1130.0	Metallo protease M34 family	5	enzyme  protease  metallo  mae  m34
+61	1130.0	Metallo protease M9B subfamily	5	enzyme  protease  metallo  mae  m9b
+62	1114.0	Metallo protease M14A subfamily	5	enzyme  protease  metallo  mc  m14a
+63	1114.0	Metallo protease M14B subfamily	5	enzyme  protease  metallo  mc  m14b
+65	1116.0	Metallo protease M24A subfamily	5	enzyme  protease  metallo  mg  m24a
+66	1116.0	Metallo protease M24B subfamily	5	enzyme  protease  metallo  mg  m24b
+67	1117.0	Metallo protease M20A subfamily	5	enzyme  protease  metallo  mh  m20a
+68	59.0	Metallo protease M28A subfamily	6	enzyme  protease  metallo  mh  m28  m28a
+69	59.0	Metallo protease M28B subfamily	6	enzyme  protease  metallo  mh  m28  m28b
+71	1107.0	Aspartic protease A22A subfamily	5	enzyme  protease  aspartic  ad  a22a
+72	1108.0	Aspartic protease A26 family	5	enzyme  protease  aspartic  af  a26
+73	1110.0	Cysteine protease C12 family	5	enzyme  protease  cysteine  ca  c12
+74	1110.0	Cysteine protease C19 family	5	enzyme  protease  cysteine  ca  c19
+76	1111.0	Cysteine protease C11 family	5	enzyme  protease  cysteine  cd  c11
+77	53.0	Cysteine protease C14A subfamily	6	enzyme  protease  cysteine  cd  c14  c14a
+78	1135.0	Cysteine protease C3A subfamily	5	enzyme  protease  cysteine  pac  c3a
+79	1138.0	Cysteine protease C26 family	5	enzyme  protease  cysteine  pcc  c26
+80	1112.0	Protease inhibitor I49 family	5	enzyme  protease  inhibitor  i-  i49
+81	1130.0	Metallo protease M48A subfamily	5	enzyme  protease  metallo  mae  m48a
+82	1131.0	Metallo protease M10A subfamily	5	enzyme  protease  metallo  mam  m10a
+83	1131.0	Metallo protease M12A subfamily	5	enzyme  protease  metallo  mam  m12a
+84	1131.0	Metallo protease M12B subfamily	5	enzyme  protease  metallo  mam  m12b
+87	1137.0	Threonine protease T2 family	5	enzyme  protease  threonine  pbt  t2
+89	1137.0	Threonine protease T1A subfamily	5	enzyme  protease  threonine  pbt  t1a
+90	1079.0	Serine protease unclassified	4	enzyme  protease  serine  unclassified
+92	28.0	Cysteine protease C2 regulatory subfamily	6	enzyme  protease  cysteine  ca  c2  reg
+93	41.0	Serine protease S29 regulatory subfamily	6	enzyme  protease  serine  pas  s29  reg
+94	1061.0	Phosphodiesterase 1A	4	enzyme  phosphodiesterase  pde_1  pde_1a
+95	1061.0	Phosphodiesterase 1B	4	enzyme  phosphodiesterase  pde_1  pde_1b
+96	1061.0	Phosphodiesterase 1C	4	enzyme  phosphodiesterase  pde_1  pde_1c
+97	1062.0	Phosphodiesterase 2A	4	enzyme  phosphodiesterase  pde_2  pde_2a
+98	1063.0	Phosphodiesterase 3A	4	enzyme  phosphodiesterase  pde_3  pde_3a
+99	1063.0	Phosphodiesterase 3B	4	enzyme  phosphodiesterase  pde_3  pde_3b
+100	1064.0	Phosphodiesterase 4A	4	enzyme  phosphodiesterase  pde_4  pde_4a
+101	1064.0	Phosphodiesterase 4B	4	enzyme  phosphodiesterase  pde_4  pde_4b
+102	1064.0	Phosphodiesterase 4C	4	enzyme  phosphodiesterase  pde_4  pde_4c
+103	1064.0	Phosphodiesterase 4D	4	enzyme  phosphodiesterase  pde_4  pde_4d
+104	1065.0	Phosphodiesterase 5A	4	enzyme  phosphodiesterase  pde_5  pde_5a
+105	1066.0	Phosphodiesterase 6A	4	enzyme  phosphodiesterase  pde_6  pde_6a
+106	1066.0	Phosphodiesterase 6B	4	enzyme  phosphodiesterase  pde_6  pde_6b
+107	1066.0	Phosphodiesterase 6C	4	enzyme  phosphodiesterase  pde_6  pde_6c
+108	1066.0	Phosphodiesterase 6D	4	enzyme  phosphodiesterase  pde_6  pde_6d
+109	1066.0	Phosphodiesterase 6G	4	enzyme  phosphodiesterase  pde_6  pde_6g
+110	1066.0	Phosphodiesterase 6H	4	enzyme  phosphodiesterase  pde_6  pde_6h
+111	1067.0	Phosphodiesterase 7A	4	enzyme  phosphodiesterase  pde_7  pde_7a
+112	1067.0	Phosphodiesterase 7B	4	enzyme  phosphodiesterase  pde_7  pde_7b
+113	1068.0	Phosphodiesterase 8A	4	enzyme  phosphodiesterase  pde_8  pde_8a
+114	1068.0	Phosphodiesterase 8B	4	enzyme  phosphodiesterase  pde_8  pde_8b
+115	1069.0	Phosphodiesterase 9A	4	enzyme  phosphodiesterase  pde_9  pde_9a
+116	63.0	Metallo protease M14B regulatory subfamily	6	enzyme  protease  metallo  mc  m14b  reg
+118	667.0	Voltage-gated potassium channel	4	ion channel  vgc  k  vg k
+119	1452.0	Atypical protein kinase PDHK subfamily	5	enzyme  kinase  protein kinase  atypical  pdhk
+120	71.0	Aspartic protease A22A regulatory subfamily	6	enzyme  protease  aspartic  ad  a22a  reg
+123	1077.0	Phosphodiesterase 10A	4	enzyme  phosphodiesterase  pde_10  pde_10a
+124	1078.0	Phosphodiesterase 11A	4	enzyme  phosphodiesterase  pde_11  pde_11a
+129	6.0	Protein kinase regulatory subunit	3	enzyme  kinase  reg
+130	1285.0	Tyrosine protein kinase Abl family	5	enzyme  kinase  protein kinase  tk  abl
+131	1285.0	Tyrosine protein kinase Ack family	5	enzyme  kinase  protein kinase  tk  ack
+132	1285.0	Tyrosine protein kinase Alk family	5	enzyme  kinase  protein kinase  tk  alk
+133	1285.0	Tyrosine protein kinase Axl family	5	enzyme  kinase  protein kinase  tk  axl
+134	1285.0	Tyrosine protein kinase Csk family	5	enzyme  kinase  protein kinase  tk  csk
+135	1285.0	Tyrosine protein kinase Eph family	5	enzyme  kinase  protein kinase  tk  eph
+136	1285.0	Tyrosine protein kinase Fak family	5	enzyme  kinase  protein kinase  tk  fak
+137	1285.0	Tyrosine protein kinase Fer family	5	enzyme  kinase  protein kinase  tk  fer
+139	1285.0	Tyrosine protein kinase Met family	5	enzyme  kinase  protein kinase  tk  met
+140	1285.0	Tyrosine protein kinase Ret family	5	enzyme  kinase  protein kinase  tk  ret
+141	1285.0	Tyrosine protein kinase Src family	5	enzyme  kinase  protein kinase  tk  src
+142	1285.0	Tyrosine protein kinase Syk family	5	enzyme  kinase  protein kinase  tk  syk
+143	1285.0	Tyrosine protein kinase Tec family	5	enzyme  kinase  protein kinase  tk  tec
+144	1285.0	Tyrosine protein kinase Tie family	5	enzyme  kinase  protein kinase  tk  tie
+146	1285.0	Tyrosine protein kinase Trk family	5	enzyme  kinase  protein kinase  tk  trk
+147	1259.0	GABA-B receptor	5	membrane receptor  7tm3  smallmol  neurotransmitter  gaba-b receptor
+148	1100.0	CMGC protein kinase group	4	enzyme  kinase  protein kinase  cmgc
+149	1285.0	Tyrosine protein kinase EGFR family	5	enzyme  kinase  protein kinase  tk  egfr
+150	1285.0	Tyrosine protein kinase FGFR family	5	enzyme  kinase  protein kinase  tk  fgfr
+151	1285.0	Tyrosine protein kinase InsR family	5	enzyme  kinase  protein kinase  tk  insr
+152	1285.0	Tyrosine protein kinase JakA family	5	enzyme  kinase  protein kinase  tk  jaka
+153	1285.0	Tyrosine protein kinase JakB family	5	enzyme  kinase  protein kinase  tk  jakb
+154	1103.0	Protein phosphatase regulatory subunit	4	enzyme  phosphatase  protein phosphatase  reg
+155	1103.0	Serine protein phosphatase	4	enzyme  phosphatase  protein phosphatase  ser
+156	1103.0	Tyrosine protein phosphatase	4	enzyme  phosphatase  protein phosphatase  tyr
+158	1100.0	Other protein kinase group	4	enzyme  kinase  protein kinase  other
+159	1285.0	Tyrosine protein kinase PDGFR family	5	enzyme  kinase  protein kinase  tk  pdgfr
+160	1285.0	Tyrosine protein kinase VEGFR family	5	enzyme  kinase  protein kinase  tk  vegfr
+165	1251.0	Glucagon receptor	5	membrane receptor  7tm2  peptide  glucagon-like  glucagon receptor
+166	1251.0	Secretin receptor receptor	5	membrane receptor  7tm2  peptide  glucagon-like  secretin receptor
+167	1179.0	Cytochrome P450 1A1	5	enzyme  cytochrome p450  cyp_1  cyp_1a  cyp_1a1
+168	1179.0	Cytochrome P450 1A2	5	enzyme  cytochrome p450  cyp_1  cyp_1a  cyp_1a2
+169	1180.0	Cytochrome P450 1B1	5	enzyme  cytochrome p450  cyp_1  cyp_1b  cyp_1b1
+170	1181.0	Cytochrome P450 2A2	5	enzyme  cytochrome p450  cyp_2  cyp_2a  cyp_2a2
+171	1181.0	Cytochrome P450 2A5	5	enzyme  cytochrome p450  cyp_2  cyp_2a  cyp_2a5
+172	1181.0	Cytochrome P450 2A6	5	enzyme  cytochrome p450  cyp_2  cyp_2a  cyp_2a6
+173	1182.0	Cytochrome P450 2B1	5	enzyme  cytochrome p450  cyp_2  cyp_2b  cyp_2b1
+174	1182.0	Cytochrome P450 2B6	5	enzyme  cytochrome p450  cyp_2  cyp_2b  cyp_2b6
+175	1183.0	Cytochrome P450 2C8	5	enzyme  cytochrome p450  cyp_2  cyp_2c  cyp_2c8
+176	1183.0	Cytochrome P450 2C9	5	enzyme  cytochrome p450  cyp_2  cyp_2c  cyp_2c9
+177	1184.0	Cytochrome P450 2D1	5	enzyme  cytochrome p450  cyp_2  cyp_2d  cyp_2d1
+178	1184.0	Cytochrome P450 2D2	5	enzyme  cytochrome p450  cyp_2  cyp_2d  cyp_2d2
+179	1184.0	Cytochrome P450 2D3	5	enzyme  cytochrome p450  cyp_2  cyp_2d  cyp_2d3
+180	1184.0	Cytochrome P450 2D6	5	enzyme  cytochrome p450  cyp_2  cyp_2d  cyp_2d6
+181	1185.0	Cytochrome P450 2E1	5	enzyme  cytochrome p450  cyp_2  cyp_2e  cyp_2e1
+182	1186.0	Cytochrome P450 3A1	5	enzyme  cytochrome p450  cyp_3  cyp_3a  cyp_3a1
+183	1186.0	Cytochrome P450 3A2	5	enzyme  cytochrome p450  cyp_3  cyp_3a  cyp_3a2
+184	1186.0	Cytochrome P450 3A4	5	enzyme  cytochrome p450  cyp_3  cyp_3a  cyp_3a4
+185	1186.0	Cytochrome P450 3A5	5	enzyme  cytochrome p450  cyp_3  cyp_3a  cyp_3a5
+186	1187.0	Cytochrome P450 4A1	5	enzyme  cytochrome p450  cyp_4  cyp_4a  cyp_4a1
+187	1187.0	Cytochrome P450 4A3	5	enzyme  cytochrome p450  cyp_4  cyp_4a  cyp_4a3
+188	1187.0	Cytochrome P450 4A4	5	enzyme  cytochrome p450  cyp_4  cyp_4a  cyp_4a4
+189	1188.0	Cytochrome P450 4F2	5	enzyme  cytochrome p450  cyp_4  cyp_4f  cyp_4f2
+190	1189.0	Cytochrome P450 5A1	5	enzyme  cytochrome p450  cyp_5  cyp_5a  cyp_5a1
+191	1190.0	Cytochrome P450 7A1	5	enzyme  cytochrome p450  cyp_7  cyp_7a  cyp_7a1
+192	1191.0	Cytochrome P450 8A1	5	enzyme  cytochrome p450  cyp_8  cyp_8a  cyp_8a1
+195	1183.0	Cytochrome P450 2C11	5	enzyme  cytochrome p450  cyp_2  cyp_2c  cyp_2c11
+196	1183.0	Cytochrome P450 2C18	5	enzyme  cytochrome p450  cyp_2  cyp_2c  cyp_2c18
+197	1183.0	Cytochrome P450 2C19	5	enzyme  cytochrome p450  cyp_2  cyp_2c  cyp_2c19
+198	1183.0	Cytochrome P450 2C23	5	enzyme  cytochrome p450  cyp_2  cyp_2c  cyp_2c23
+199	1184.0	Cytochrome P450 2D18	5	enzyme  cytochrome p450  cyp_2  cyp_2d  cyp_2d18
+200	1187.0	Cytochrome P450 4A11	5	enzyme  cytochrome p450  cyp_4  cyp_4a  cyp_4a11
+202	1256.0	Calcitonin receptor	5	membrane receptor  7tm2  peptide  calcitonin-like  calcitonin receptor
+203	1289.0	AGC protein kinase AKT family	5	enzyme  kinase  protein kinase  agc  akt
+204	1289.0	AGC protein kinase NDR family	5	enzyme  kinase  protein kinase  agc  ndr
+205	1289.0	AGC protein kinase PKA family	5	enzyme  kinase  protein kinase  agc  pka
+206	1289.0	AGC protein kinase PKC family	5	enzyme  kinase  protein kinase  agc  pkc
+207	1289.0	AGC protein kinase PKG family	5	enzyme  kinase  protein kinase  agc  pkg
+208	1289.0	AGC protein kinase PKN family	5	enzyme  kinase  protein kinase  agc  pkn
+209	1289.0	AGC protein kinase SGK family	5	enzyme  kinase  protein kinase  agc  sgk
+210	1301.0	CK1 protein kinase CK1 family	5	enzyme  kinase  protein kinase  ck1  ck1
+211	148.0	CMGC protein kinase CK subfamily	5	enzyme  kinase  protein kinase  cmgc  ck
+219	141.0	Tyrosine protein kinase Srm	6	enzyme  kinase  protein kinase  tk  src  srm
+222	1103.0	Serine/threonine protein phosphatase	4	enzyme  phosphatase  protein phosphatase  ser_thr
+223	1218.0	Cytochrome P450 11A1	5	enzyme  cytochrome p450  cyp_11  cyp_11a  cyp_11a1
+224	1219.0	Cytochrome P450 11B1	5	enzyme  cytochrome p450  cyp_11  cyp_11b  cyp_11b1
+225	1219.0	Cytochrome P450 11B2	5	enzyme  cytochrome p450  cyp_11  cyp_11b  cyp_11b2
+226	1220.0	Cytochrome P450 17A1	5	enzyme  cytochrome p450  cyp_17  cyp_17a  cyp_17a1
+227	1221.0	Cytochrome P450 19A1	5	enzyme  cytochrome p450  cyp_19  cyp_19a  cyp_19a1
+228	1222.0	Cytochrome P450 21A2	5	enzyme  cytochrome p450  cyp_21  cyp_21a  cyp_21a2
+229	1223.0	Cytochrome P450 24A1	5	enzyme  cytochrome p450  cyp_24  cyp_24a  cyp_24a1
+230	1224.0	Cytochrome P450 26A1	5	enzyme  cytochrome p450  cyp_26  cyp_26a  cyp_26a1
+231	1225.0	Cytochrome P450 51A1	5	enzyme  cytochrome p450  cyp_51  cyp_51a  cyp_51a1
+232	1289.0	AGC protein kinase PDK1 subfamily	5	enzyme  kinase  protein kinase  agc  pdk1
+233	1289.0	AGC protein kinase YANK family	5	enzyme  kinase  protein kinase  agc  yank
+234	1339.0	CAMK protein kinase PHk family	5	enzyme  kinase  protein kinase  camk  phk
+235	1339.0	CAMK protein kinase PIM family	5	enzyme  kinase  protein kinase  camk  pim
+236	1339.0	CAMK protein kinase PKD family	5	enzyme  kinase  protein kinase  camk  pkd
+237	148.0	CMGC protein kinase CDK family	5	enzyme  kinase  protein kinase  cmgc  cdk
+239	148.0	CMGC protein kinase GSK family	5	enzyme  kinase  protein kinase  cmgc  gsk
+240	1334.0	TKL protein kinase LRRK family	5	enzyme  kinase  protein kinase  tkl  lrrk
+241	1334.0	TKL protein kinase RIPK family	5	enzyme  kinase  protein kinase  tkl  ripk
+242	141.0	Tyrosine protein kinase SrcA	6	enzyme  kinase  protein kinase  tk  src  srca
+243	1024.0	Epithelial sodium channel	3	ion channel  lgic  enac
+245	1339.0	CAMK protein kinase DAPK family	5	enzyme  kinase  protein kinase  camk  dapk
+246	1339.0	CAMK protein kinase MLCK family	5	enzyme  kinase  protein kinase  camk  mlck
+247	1339.0	CAMK protein kinase TSSK family	5	enzyme  kinase  protein kinase  camk  tssk
+248	148.0	CMGC protein kinase CDKL family	5	enzyme  kinase  protein kinase  cmgc  cdkl
+249	148.0	CMGC protein kinase MAPK family	5	enzyme  kinase  protein kinase  cmgc  mapk
+250	148.0	CMGC protein kinase SRPK family	5	enzyme  kinase  protein kinase  cmgc  srpk
+251	158.0	Other protein kinase AUR family	5	enzyme  kinase  protein kinase  other  aur
+252	158.0	Other protein kinase CK2 family	5	enzyme  kinase  protein kinase  other  ck2
+253	158.0	Other protein kinase IKK family	5	enzyme  kinase  protein kinase  other  ikk
+254	158.0	Other protein kinase MOS family	5	enzyme  kinase  protein kinase  other  mos
+255	158.0	Other protein kinase NAK family	5	enzyme  kinase  protein kinase  other  nak
+256	158.0	Other protein kinase NEK family	5	enzyme  kinase  protein kinase  other  nek
+257	158.0	Other protein kinase PLK family	5	enzyme  kinase  protein kinase  other  plk
+258	158.0	Other protein kinase ULK family	5	enzyme  kinase  protein kinase  other  ulk
+259	158.0	Other protein kinase WEE family	5	enzyme  kinase  protein kinase  other  wee
+260	158.0	Other protein kinase Wnk family	5	enzyme  kinase  protein kinase  other  wnk
+261	1331.0	STE protein kinase STE11 family	5	enzyme  kinase  protein kinase  ste  ste11
+262	1331.0	STE protein kinase STE20 family	5	enzyme  kinase  protein kinase  ste  ste20
+269	1339.0	CAMK protein kinase CAMK2 family	5	enzyme  kinase  protein kinase  camk  camk2
+270	1339.0	CAMK protein kinase RAD53 family	5	enzyme  kinase  protein kinase  camk  rad53
+271	158.0	Other protein kinase CDC7 family	5	enzyme  kinase  protein kinase  other  cdc7
+272	158.0	Other protein kinase NKF1 family	5	enzyme  kinase  protein kinase  other  nkf1
+273	158.0	Other protein kinase TOPK family	5	enzyme  kinase  protein kinase  other  topk
+279	1103.0	Serine/threonine/tyrosine protein phosphatase	4	enzyme  phosphatase  protein phosphatase  ser_thr_tyr
+281	1271.0	Calcium sensing receptor	5	membrane receptor  7tm3  ion  calcium sensing receptor  calcium sensing receptor
+283	1618.0	AGC protein kinase GRK subfamily	6	enzyme  kinase  protein kinase  agc  grk  grk
+286	206.0	AGC protein kinase PKC eta subfamily	6	enzyme  kinase  protein kinase  agc  pkc  eta
+287	1648.0	AGC protein kinase MSK subfamily	6	enzyme  kinase  protein kinase  agc  rsk  msk
+288	1648.0	AGC protein kinase p70 subfamily	6	enzyme  kinase  protein kinase  agc  rsk  p70
+289	1648.0	AGC protein kinase RSK subfamily	6	enzyme  kinase  protein kinase  agc  rsk  rsk
+291	1452.0	Atypical protein kinase BCR family	5	enzyme  kinase  protein kinase  atypical  bcr
+292	158.0	Other protein kinase Bud32 family	5	enzyme  kinase  protein kinase  other  bud 32
+293	158.0	Other protein kinase Haspin family	5	enzyme  kinase  protein kinase  other  haspin
+294	1623.0	TKL protein kinase ILK subfamily	6	enzyme  kinase  protein kinase  tkl  mlk  ilk
+295	1623.0	TKL protein kinase LZK subfamily	6	enzyme  kinase  protein kinase  tkl  mlk  lzk
+297	148.0	CMGC protein kinase CLK family	5	enzyme  kinase  protein kinase  cmgc  clk
+298	1331.0	STE protein kinase STE7 family	5	enzyme  kinase  protein kinase  ste  ste7
+301	1668.0	AGC protein kinase GEK subfamily	6	enzyme  kinase  protein kinase  agc  dmpk  gek
+302	1618.0	AGC protein kinase BARK subfamily	6	enzyme  kinase  protein kinase  agc  grk  bark
+303	206.0	AGC protein kinase PKC iota subfamily	6	enzyme  kinase  protein kinase  agc  pkc  iota
+304	206.0	AGC protein kinase PKC theta	6	enzyme  kinase  protein kinase  agc  pkc  theta
+305	1452.0	Atypical protein kinase PIKK family	5	enzyme  kinase  protein kinase  atypical  pikk
+306	1640.0	CMGC protein kinase MAK	6	enzyme  kinase  protein kinase  cmgc  rck  mak
+307	1623.0	TKL protein kinase TAK1 subfamily	6	enzyme  kinase  protein kinase  tkl  mlk  tak1
+308	158.0	Other protein kinase TTK family	5	enzyme  kinase  protein kinase  other  ttk
+310	156.0	Receptor tyrosine-protein phosphatase	5	enzyme  phosphatase  protein phosphatase  tyr  receptor
+314	1668.0	AGC protein kinase CRIK subfamily	6	enzyme  kinase  protein kinase  agc  dmpk  crik
+315	1668.0	AGC protein kinase ROCK subfamily	6	enzyme  kinase  protein kinase  agc  dmpk  rock
+317	206.0	AGC protein kinase PKC alpha subfamily	6	enzyme  kinase  protein kinase  agc  pkc  alpha
+318	206.0	AGC protein kinase PKC delta subfamily	6	enzyme  kinase  protein kinase  agc  pkc  delta
+320	1452.0	Atypical protein kinase alpha family	5	enzyme  kinase  protein kinase  atypical  alpha
+321	210.0	CK1 protein kinase CK1-a	6	enzyme  kinase  protein kinase  ck1  ck1  ck1-a
+322	210.0	CK1 protein kinase CK1-g	6	enzyme  kinase  protein kinase  ck1  ck1  ck1-g
+323	237.0	CMGC protein kinase CDC2 subfamily	6	enzyme  kinase  protein kinase  cmgc  cdk  cdc2
+324	237.0	CMGC protein kinase CDK2	6	enzyme  kinase  protein kinase  cmgc  cdk  cdk2
+325	237.0	CMGC protein kinase CDK5 subfamily	6	enzyme  kinase  protein kinase  cmgc  cdk  cdk5
+326	237.0	CMGC protein kinase CDK7 subfamily	6	enzyme  kinase  protein kinase  cmgc  cdk  cdk7
+327	237.0	CMGC protein kinase CDK8 subfamily	6	enzyme  kinase  protein kinase  cmgc  cdk  cdk8
+328	237.0	CMGC protein kinase CDK9 subfamily	6	enzyme  kinase  protein kinase  cmgc  cdk  cdk9
+329	249.0	CMGC protein kinase ERK subfamily	6	enzyme  kinase  protein kinase  cmgc  mapk  erk
+330	249.0	CMGC protein kinase JNK subfamily	6	enzyme  kinase  protein kinase  cmgc  mapk  jnk
+331	249.0	CMGC protein kinase nmo subfamily	6	enzyme  kinase  protein kinase  cmgc  mapk  nmo
+332	249.0	CMGC protein kinase p38 subfamily	6	enzyme  kinase  protein kinase  cmgc  mapk  p38
+334	1629.0	Other protein kinase HRI	6	enzyme  kinase  protein kinase  other  pek  hri
+335	1629.0	Other protein kinase PEK subfamily	6	enzyme  kinase  protein kinase  other  pek  pek
+336	1629.0	Other protein kinase PKR	6	enzyme  kinase  protein kinase  other  pek  pkr
+340	261.0	STE protein kinase ASK	6	enzyme  kinase  protein kinase  ste  ste11  ask
+341	262.0	STE protein kinase KHS subfamily	6	enzyme  kinase  protein kinase  ste  ste20  khs
+342	262.0	STE protein kinase MSN subfamily	6	enzyme  kinase  protein kinase  ste  ste20  msn
+343	262.0	STE protein kinase MST subfamily	6	enzyme  kinase  protein kinase  ste  ste20  mst
+344	262.0	STE protein kinase SLK subfamily	6	enzyme  kinase  protein kinase  ste  ste20  slk
+345	262.0	STE protein kinase TAO subfamily	6	enzyme  kinase  protein kinase  ste  ste20  tao
+346	262.0	STE protein kinase YSK subfamily	6	enzyme  kinase  protein kinase  ste  ste20  ysk
+348	1678.0	TKL protein kinase LIMK subfamily	6	enzyme  kinase  protein kinase  tkl  lisk  limk
+349	1623.0	TKL protein kinase HH498 subfamily	6	enzyme  kinase  protein kinase  tkl  mlk  hh498
+352	1153.0	Nuclear hormone receptor subfamily 1 group A member 1	5	transcription factor  nuclear receptor  nr1  nr1a  nr1a1
+353	1153.0	Nuclear hormone receptor subfamily 1 group A member 2	5	transcription factor  nuclear receptor  nr1  nr1a  nr1a2
+354	1154.0	Nuclear hormone receptor subfamily 1 group B member 1	5	transcription factor  nuclear receptor  nr1  nr1b  nr1b1
+355	1154.0	Nuclear hormone receptor subfamily 1 group B member 2	5	transcription factor  nuclear receptor  nr1  nr1b  nr1b2
+356	1154.0	Nuclear hormone receptor subfamily 1 group B member 3	5	transcription factor  nuclear receptor  nr1  nr1b  nr1b3
+357	1155.0	Nuclear hormone receptor subfamily 1 group C member 1	5	transcription factor  nuclear receptor  nr1  nr1c  nr1c1
+358	1155.0	Nuclear hormone receptor subfamily 1 group C member 2	5	transcription factor  nuclear receptor  nr1  nr1c  nr1c2
+359	1155.0	Nuclear hormone receptor subfamily 1 group C member 3	5	transcription factor  nuclear receptor  nr1  nr1c  nr1c3
+360	1158.0	Nuclear hormone receptor subfamily 1 group H member 1	5	transcription factor  nuclear receptor  nr1  nr1h  nr1h1
+361	1158.0	Nuclear hormone receptor subfamily 1 group H member 3	5	transcription factor  nuclear receptor  nr1  nr1h  nr1h3
+362	1158.0	Nuclear hormone receptor subfamily 1 group H member 4	5	transcription factor  nuclear receptor  nr1  nr1h  nr1h4
+363	1159.0	Nuclear hormone receptor subfamily 1 group I member 1	5	transcription factor  nuclear receptor  nr1  nr1i  nr1i1
+364	1159.0	Nuclear hormone receptor subfamily 1 group I member 2	5	transcription factor  nuclear receptor  nr1  nr1i  nr1i2
+365	1159.0	Nuclear hormone receptor subfamily 1 group I member 3	5	transcription factor  nuclear receptor  nr1  nr1i  nr1i3
+366	1161.0	Nuclear hormone receptor subfamily 2 group B member 1	5	transcription factor  nuclear receptor  nr2  nr2b  nr2b1
+367	1161.0	Nuclear hormone receptor subfamily 2 group B member 2	5	transcription factor  nuclear receptor  nr2  nr2b  nr2b2
+368	1161.0	Nuclear hormone receptor subfamily 2 group B member 3	5	transcription factor  nuclear receptor  nr2  nr2b  nr2b3
+369	1163.0	Nuclear hormone receptor subfamily 2 group E member 3	5	transcription factor  nuclear receptor  nr2  nr2e  nr2e3
+370	1165.0	Nuclear hormone receptor subfamily 3 group A member 1	5	transcription factor  nuclear receptor  nr3  nr3a  nr3a1
+371	1165.0	Nuclear hormone receptor subfamily 3 group A member 2	5	transcription factor  nuclear receptor  nr3  nr3a  nr3a2
+372	1166.0	Nuclear hormone receptor subfamily 3 group B member 1	5	transcription factor  nuclear receptor  nr3  nr3b  nr3b1
+373	1166.0	Nuclear hormone receptor subfamily 3 group B member 2	5	transcription factor  nuclear receptor  nr3  nr3b  nr3b2
+374	1166.0	Nuclear hormone receptor subfamily 3 group B member 3	5	transcription factor  nuclear receptor  nr3  nr3b  nr3b3
+375	1167.0	Nuclear hormone receptor subfamily 3 group C member 1	5	transcription factor  nuclear receptor  nr3  nr3c  nr3c1
+376	1167.0	Nuclear hormone receptor subfamily 3 group C member 2	5	transcription factor  nuclear receptor  nr3  nr3c  nr3c2
+377	1167.0	Nuclear hormone receptor subfamily 3 group C member 3	5	transcription factor  nuclear receptor  nr3  nr3c  nr3c3
+378	1167.0	Nuclear hormone receptor subfamily 3 group C member 4	5	transcription factor  nuclear receptor  nr3  nr3c  nr3c4
+379	1169.0	Nuclear hormone receptor subfamily 5 group A member 1	5	transcription factor  nuclear receptor  nr5  nr5a  nr5a1
+380	1169.0	Nuclear hormone receptor subfamily 5 group A member 2	5	transcription factor  nuclear receptor  nr5  nr5a  nr5a2
+382	1648.0	AGC protein kinase RSKp70	6	enzyme  kinase  protein kinase  agc  rsk  rskp70
+383	1702.0	CAMK protein kinase LKB subfamily	6	enzyme  kinase  protein kinase  camk  camkl  lkb
+384	1702.0	CAMK protein kinase QIK subfamily	6	enzyme  kinase  protein kinase  camk  camkl  qik
+385	1690.0	CAMK protein kinase MSKb subfamily	6	enzyme  kinase  protein kinase  camk  rskb  mskb
+386	1690.0	CAMK protein kinase RSKb subfamily	6	enzyme  kinase  protein kinase  camk  rskb  rskb
+388	237.0	CMGC protein kinase TAIRE subfamily	6	enzyme  kinase  protein kinase  cmgc  cdk  taire
+390	1669.0	CMGC protein kinase HIPK subfamily	6	enzyme  kinase  protein kinase  cmgc  dyrk  hipk
+391	249.0	CMGC protein kinase ERK1	6	enzyme  kinase  protein kinase  cmgc  mapk  erk1
+392	249.0	CMGC protein kinase ERK3	6	enzyme  kinase  protein kinase  cmgc  mapk  erk3
+393	249.0	CMGC protein kinase ERK5	6	enzyme  kinase  protein kinase  cmgc  mapk  erk5
+395	256.0	Other protein kinase Nek1	6	enzyme  kinase  protein kinase  other  nek  nek1
+396	1629.0	Other protein kinase GCN2 subfamily	6	enzyme  kinase  protein kinase  other  pek  gcn2
+397	257.0	Other protein kinase PLK2	6	enzyme  kinase  protein kinase  other  plk  plk2
+398	259.0	Other protein kinase WEE1	6	enzyme  kinase  protein kinase  other  wee  wee1
+400	262.0	STE protein kinase FRAY subfamily	6	enzyme  kinase  protein kinase  ste  ste20  fray
+401	262.0	STE protein kinase PAKA subfamily	6	enzyme  kinase  protein kinase  ste  ste20  paka
+402	262.0	STE protein kinase PAKB subfamily	6	enzyme  kinase  protein kinase  ste  ste20  pakb
+403	1693.0	TKL protein kinase STKR1	6	enzyme  kinase  protein kinase  tkl  stkr  stkr1
+404	1693.0	TKL protein kinase STKR Type 1 subfamily	6	enzyme  kinase  protein kinase  tkl  stkr  type1
+405	1693.0	TKL protein kinase STKR Type 2 subfamily	6	enzyme  kinase  protein kinase  tkl  stkr  type2
+406	1126.0	Nicotinic acetylcholine receptor beta subunit	4	ion channel  lgic  ach  chrn beta
+407	1275.0	Parathyroid hormone receptor	5	membrane receptor  7tm2  peptide  parathyroid hormone receptor  parathyroid hormone receptor
+409	1702.0	CAMK protein kinase AMPK subfamily	6	enzyme  kinase  protein kinase  camk  camkl  ampk
+410	1702.0	CAMK protein kinase BRSK subfamily	6	enzyme  kinase  protein kinase  camk  camkl  brsk
+411	1702.0	CAMK protein kinase CHK1 subfamily	6	enzyme  kinase  protein kinase  camk  camkl  chk1
+412	1702.0	CAMK protein kinase MARK subfamily	6	enzyme  kinase  protein kinase  camk  camkl  mark
+413	1702.0	CAMK protein kinase MELK subfamily	6	enzyme  kinase  protein kinase  camk  camkl  melk
+414	1702.0	CAMK protein kinase NIM1 subfamily	6	enzyme  kinase  protein kinase  camk  camkl  nim1
+415	1702.0	CAMK protein kinase NuaK subfamily	6	enzyme  kinase  protein kinase  camk  camkl  nuak
+416	1702.0	CAMK protein kinase PASK subfamily	6	enzyme  kinase  protein kinase  camk  camkl  pask
+417	256.0	Other protein kinase Nek11	6	enzyme  kinase  protein kinase  other  nek  nek11
+419	261.0	STE protein kinase MEKK2	6	enzyme  kinase  protein kinase  ste  ste11  mekk2
+420	262.0	STE protein kinase NinaC subfamily	6	enzyme  kinase  protein kinase  ste  ste20  ninac
+421	1623.0	TKL protein kinase MLK subfamily	6	enzyme  kinase  protein kinase  tkl  mlk  mlk
+422	1126.0	Nicotinic acetylcholine receptor alpha subunit	4	ion channel  lgic  ach  chrn alpha
+423	1126.0	Nicotinic acetylcholine receptor delta subunit	4	ion channel  lgic  ach  chrn delta
+424	1126.0	Nicotinic acetylcholine receptor gamma subunit	4	ion channel  lgic  ach  chrn gamma
+428	1713.0	CAMK protein kinase MNK subfamily	6	enzyme  kinase  protein kinase  camk  mapkapk  mnk
+429	237.0	CMGC protein kinase PCTAIRE	6	enzyme  kinase  protein kinase  cmgc  cdk  pctaire
+430	237.0	CMGC protein kinase PFTAIRE	6	enzyme  kinase  protein kinase  cmgc  cdk  pftaire
+431	237.0	CMGC protein kinase PITSLRE subfamily	6	enzyme  kinase  protein kinase  cmgc  cdk  pitslre
+432	1701.0	Other protein kinase Meta subfamily	6	enzyme  kinase  protein kinase  other  camkk  meta
+435	1251.0	Glucagon-like peptide receptor	5	membrane receptor  7tm2  peptide  glucagon-like  glucagon-like peptide receptor
+437	1647.0	Atypical protein kinase RIO1 subfamily	6	enzyme  kinase  protein kinase  atypical  rio  rio1
+438	1647.0	Atypical protein kinase RIO2 subfamily	6	enzyme  kinase  protein kinase  atypical  rio  rio2
+439	1647.0	Atypical protein kinase RIO3 subfamily	6	enzyme  kinase  protein kinase  atypical  rio  rio3
+440	158.0	Other protein kinase unique family	5	enzyme  kinase  protein kinase  other  other-unique
+441	1678.0	TKL protein kinase TESK subfamily	6	enzyme  kinase  protein kinase  tkl  lisk  tesk
+442	1126.0	Nicotinic acetylcholine receptor epsilon subunit	4	ion channel  lgic  ach  chrn epsilon
+446	1259.0	Metabotropic glutamate receptor	5	membrane receptor  7tm3  smallmol  neurotransmitter  metabotropic glutamate receptor
+449	1098.0	Hydrogen potassium ATPase	4	transporter  ntpase  p-type atpase  h k atpase
+450	305.0	Atypical protein kinase FRAP subfamily	6	enzyme  kinase  protein kinase  atypical  pikk  frap
+460	1253.0	MCH receptor	5	membrane receptor  7tm1  peptide  short peptide  mch receptor
+465	1669.0	CMGC protein kinase Dyrk1 subfamily	6	enzyme  kinase  protein kinase  cmgc  dyrk  dyrk1
+466	1669.0	CMGC protein kinase Dyrk2 subfamily	6	enzyme  kinase  protein kinase  cmgc  dyrk  dyrk2
+468	1253.0	GnRH receptor	5	membrane receptor  7tm1  peptide  short peptide  gnrh receptor
+471	1664.0	Atypical protein kinase ABC1-A subfamily	6	enzyme  kinase  protein kinase  atypical  abc1  abc1-a
+472	1713.0	CAMK protein kinase MAPKAPK subfamily	6	enzyme  kinase  protein kinase  camk  mapkapk  mapkapk
+479	1253.0	Opioid receptor	5	membrane receptor  7tm1  peptide  short peptide  opioid receptor
+480	1253.0	Orexin receptor	5	membrane receptor  7tm1  peptide  short peptide  orexin receptor
+483	1253.0	Galanin receptor	5	membrane receptor  7tm1  peptide  short peptide  galanin receptor
+484	1253.0	Motilin receptor	5	membrane receptor  7tm1  peptide  short peptide  motilin receptor
+486	1253.0	RF amide receptor	5	membrane receptor  7tm1  peptide  short peptide  rf amide receptor
+487	1273.0	PAF receptor	5	membrane receptor  7tm1  smallmol  lipid-like ligand receptor  paf
+490	206.0	AGC protein kinase PKC unclassified	6	enzyme  kinase  protein kinase  agc  pkc  pkc-unclassified
+491	1277.0	Vasoactive intestinal peptide receptor	5	membrane receptor  7tm2  peptide  vasoactive intestinal peptide receptor  vasoactive intestinal peptide receptor
+494	1098.0	Sodium potassium ATPase	4	transporter  ntpase  p-type atpase  na k atpase
+496	1035.0	Protein-glutamine glutamyl-transferase	3	enzyme  aminoacyltransferase  protein-glutamine glutamyl-transferase
+497	237.0	CMGC protein kinase unclassified CDK subfamily	6	enzyme  kinase  protein kinase  cmgc  cdk  cdk-unclassified
+499	1253.0	Bradykinin receptor	5	membrane receptor  7tm1  peptide  short peptide  bradykinin receptor
+500	1253.0	Endothelin receptor	5	membrane receptor  7tm1  peptide  short peptide  endothelin receptor
+501	1253.0	Neurokinin receptor	5	membrane receptor  7tm1  peptide  short peptide  neurokinin receptor
+502	1253.0	Neuromedin receptor	5	membrane receptor  7tm1  peptide  short peptide  neuromedin receptor
+503	1278.0	Corticotropin releasing factor receptor	5	membrane receptor  7tm2  peptide  corticotropin releasing factor receptor  corticotropin releasing factor receptor
+504	1251.0	Gastric inhibitory polypeptide receptor	5	membrane receptor  7tm2  peptide  glucagon-like  gastric inhibitory polypeptide receptor
+506	1082.0	N-formyl methionyl peptide receptor	4	membrane receptor  7tm1  peptide  n-formyl methionyl peptide receptor
+507	1253.0	Angiotensin receptor	5	membrane receptor  7tm1  peptide  short peptide  angiotensin receptor
+508	1253.0	GRP-related receptor	5	membrane receptor  7tm1  peptide  short peptide  grp-related receptor
+509	1253.0	Neurotensin receptor	5	membrane receptor  7tm1  peptide  short peptide  neurotensin receptor
+510	1256.0	Calcitonin gene-related peptide receptor	5	membrane receptor  7tm2  peptide  calcitonin-like  calcitonin gene-related peptide receptor
+515	1253.0	Melanocortin receptor	5	membrane receptor  7tm1  peptide  short peptide  melanocortin receptor
+516	1253.0	Neuropeptide receptor	5	membrane receptor  7tm1  peptide  short peptide  neuropeptide receptor
+517	1253.0	Somatostatin receptor	5	membrane receptor  7tm1  peptide  short peptide  somatostatin receptor
+518	1251.0	Growth hormone-releasing hormone receptor	5	membrane receptor  7tm2  peptide  glucagon-like  growth hormone-releasing hormone receptor
+528	1269.0	Anaphylatoxin receptor	5	membrane receptor  7tm1  peptide  anaphylatoxin receptor  anaphylatoxin
+533	1253.0	Adrenomedullin receptor	5	membrane receptor  7tm1  peptide  short peptide  adrenomedullin receptor
+534	1253.0	Neuropeptide Y receptor	5	membrane receptor  7tm1  peptide  short peptide  neuropeptide y receptor
+535	1266.0	Dopamine receptor	5	membrane receptor  7tm1  smallmol  monoamine receptor  dopamine receptor
+540	1253.0	Cholecystokinin receptor	5	membrane receptor  7tm1  peptide  short peptide  cholecystokinin receptor
+541	1266.0	Histamine receptor	5	membrane receptor  7tm1  smallmol  monoamine receptor  histamine receptor
+542	1266.0	Serotonin receptor	5	membrane receptor  7tm1  smallmol  monoamine receptor  serotonin receptor
+544	1266.0	Adrenergic receptor	5	membrane receptor  7tm1  smallmol  monoamine receptor  adrenergic receptor
+547	1265.0	CC chemokine receptor	5	membrane receptor  7tm1  peptide  chemokine receptor  cc chemokine receptor
+548	1265.0	XC chemokine receptor	5	membrane receptor  7tm1  peptide  chemokine receptor  xc chemokine receptor
+549	1273.0	EDG receptor	5	membrane receptor  7tm1  smallmol  lipid-like ligand receptor  edg receptor
+550	1266.0	Trace amine receptor	5	membrane receptor  7tm1  smallmol  monoamine receptor  trace amine receptor
+551	1267.0	Melatonin receptor	5	membrane receptor  7tm1  smallmol  monoamine-derivative  melatonin receptor
+554	1265.0	CXC chemokine receptor	5	membrane receptor  7tm1  peptide  chemokine receptor  cxc chemokine receptor
+555	1270.0	Chemerin receptor	5	membrane receptor  7tm1  peptide  chemokine receptor-like  chemerin receptor
+556	1272.0	Purine receptor	5	membrane receptor  7tm1  smallmol  nucleotide-like receptor  purine receptor
+558	1265.0	CX3C chemokine receptor	5	membrane receptor  7tm1  peptide  chemokine receptor  cx3c chemokine receptor
+559	1266.0	Acetylcholine receptor	5	membrane receptor  7tm1  smallmol  monoamine receptor  acetylcholine receptor
+561	1268.0	Glycohormone receptor	5	membrane receptor  7tm1  peptide  glycohormone receptor  glycohormone receptor
+562	1253.0	Vasopressin and oxytocin receptor	5	membrane receptor  7tm1  peptide  short peptide  vasopressin and oxytocin receptor
+563	1272.0	Adenosine receptor	5	membrane receptor  7tm1  smallmol  nucleotide-like receptor  adenosine receptor
+565	1273.0	Prostanoid receptor	5	membrane receptor  7tm1  smallmol  lipid-like ligand receptor  prostanoid receptor
+566	1273.0	Cannabinoid receptor	5	membrane receptor  7tm1  smallmol  lipid-like ligand receptor  cannabinoid receptor
+567	1273.0	Leukotriene receptor	5	membrane receptor  7tm1  smallmol  lipid-like ligand receptor  leukotriene receptor
+568	1272.0	Nicotinic acid receptor	5	membrane receptor  7tm1  smallmol  nucleotide-like receptor  nicotinic acid receptor
+569	1272.0	Nucleotide-like receptor	5	membrane receptor  7tm1  smallmol  nucleotide-like receptor  nucleotide-like receptor
+570	1273.0	Free fatty acid receptor	5	membrane receptor  7tm1  smallmol  lipid-like ligand receptor  free fatty acid receptor
+571	1274.0	Protease-activated receptor	5	membrane receptor  7tm1  peptide  protease-activated receptor  protease-activated receptor
+573	1273.0	Steroid-like ligand receptor	5	membrane receptor  7tm1  smallmol  lipid-like ligand receptor  steroid-like ligand receptor
+574	506.0	N-formyl methionyl peptide receptor	5	membrane receptor  7tm1  peptide  n-formyl methionyl peptide receptor  n-formyl methionyl peptide receptor
+581	1156.0	Nuclear hormone receptor subfamily 1 group D member 1	5	transcription factor  nuclear receptor  nr1  nr1d  nr1d1
+582	1156.0	Nuclear hormone receptor subfamily 1 group D member 2	5	transcription factor  nuclear receptor  nr1  nr1d  nr1d2
+583	1157.0	Nuclear hormone receptor subfamily 1 group F member 1	5	transcription factor  nuclear receptor  nr1  nr1f  nr1f1
+584	1157.0	Nuclear hormone receptor subfamily 1 group F member 3	5	transcription factor  nuclear receptor  nr1  nr1f  nr1f3
+586	1160.0	Nuclear hormone receptor subfamily 2 group A member 2	5	transcription factor  nuclear receptor  nr2  nr2a  nr2a2
+587	1162.0	Nuclear hormone receptor subfamily 2 group C member 1	5	transcription factor  nuclear receptor  nr2  nr2c  nr2c1
+588	1162.0	Nuclear hormone receptor subfamily 2 group C member 2	5	transcription factor  nuclear receptor  nr2  nr2c  nr2c2
+589	1163.0	Nuclear hormone receptor subfamily 2 group E member 1	5	transcription factor  nuclear receptor  nr2  nr2e  nr2e1
+590	1164.0	Nuclear hormone receptor subfamily 2 group F member 1	5	transcription factor  nuclear receptor  nr2  nr2f  nr2f1
+591	1164.0	Nuclear hormone receptor subfamily 2 group F member 2	5	transcription factor  nuclear receptor  nr2  nr2f  nr2f2
+592	1164.0	Nuclear hormone receptor subfamily 2 group F member 6	5	transcription factor  nuclear receptor  nr2  nr2f  nr2f6
+593	1168.0	Nuclear hormone receptor subfamily 4 group A member 1	5	transcription factor  nuclear receptor  nr4  nr4a  nr4a1
+594	1168.0	Nuclear hormone receptor subfamily 4 group A member 2	5	transcription factor  nuclear receptor  nr4  nr4a  nr4a2
+595	1168.0	Nuclear hormone receptor subfamily 4 group A member 3	5	transcription factor  nuclear receptor  nr4  nr4a  nr4a3
+596	1170.0	Nuclear hormone receptor subfamily 6 group A member 1	5	transcription factor  nuclear receptor  nr6  nr6a  nr6a1
+597	1152.0	Nuclear hormone receptor subfamily 0 group B member 1	5	transcription factor  nuclear receptor  nr0  nr0b  nr0b1
+598	1152.0	Nuclear hormone receptor subfamily 0 group B member 2	5	transcription factor  nuclear receptor  nr0  nr0b  nr0b2
+601	0.0	Unclassified protein	1	unclassified
+603	616.0	Hydroxycarboxylic acid receptor	5	membrane receptor  7tm1  smallmol  carboxylic acid  hydroxycarboxylic acid receptor
+604	616.0	Kynurenic acid receptor	5	membrane receptor  7tm1  smallmol  carboxylic acid  kynurenic acid receptor
+605	616.0	Succinate receptor	5	membrane receptor  7tm1  smallmol  carboxylic acid  succinate receptor
+606	1273.0	Lysophosphatidylinositol receptor	5	membrane receptor  7tm1  smallmol  lipid-like ligand receptor  lysophosphatidylinositol receptor
+607	1253.0	Neuromedin U receptor	5	membrane receptor  7tm1  peptide  short peptide  neuromedin u receptor
+608	1253.0	Prolactin-releasing peptide receptor	5	membrane receptor  7tm1  peptide  short peptide  prolactin-releasing peptide receptor
+609	617.0	Prokineticin receptor	5	membrane receptor  7tm1  peptide  peptide growth factor  prokineticin receptor
+610	618.0	Relaxin receptor	5	membrane receptor  7tm1  peptide  relaxin-like peptide  relaxin
+611	621.0	Rhodopsin	4	membrane receptor  7tm1  opsin  rhodopsin
+612	619.0	Smoothened receptor (frizzled family GPCR)	3	membrane receptor  7tmfz  smoothened
+613	1022.0	Taste receptor (family C GPCR)	3	membrane receptor  7tm3  taste receptor
+614	620.0	Taste receptor (taste family GPCR)	3	membrane receptor  7tmtas2r  taste receptor
+615	616.0	Oxoglutarate receptor	5	membrane receptor  7tm1  smallmol  carboxylic acid  oxoglutarate receptor
+616	1088.0	Carboxylic acid receptor	4	membrane receptor  7tm1  smallmol  carboxylic acid
+617	1082.0	Peptide growth factor receptor (family A GPCR)	4	membrane receptor  7tm1  peptide  peptide growth factor
+618	1082.0	Relaxin-like peptide receptor (family A GPCR)	4	membrane receptor  7tm1  peptide  relaxin-like peptide
+619	11.0	Frizzled family G protein-coupled receptor	2	membrane receptor  7tmfz
+620	11.0	Taste family G protein-coupled receptor	2	membrane receptor  7tmtas2r
+621	1020.0	Opsin	3	membrane receptor  7tm1  opsin
+643	1.0	Transferase	2	enzyme  transferase
+644	1.0	Isomerase	2	enzyme  isomerase
+645	1.0	Ligase	2	enzyme  ligase
+646	1.0	Hydrolase	2	enzyme  hydrolase
+647	667.0	Two-pore domain potassium channel	4	ion channel  vgc  k  k2p
+648	1.0	Lyase	2	enzyme  lyase
+649	11.0	Toll-like and Il-1 receptors	2	membrane receptor  toll-like and il-1
+663	1024.0	Glutamate-gated chloride channel (invertebrate)	3	ion channel  lgic  glut (invertebrate)
+664	1053.0	Ionotropic glutamate receptor-like	4	ion channel  lgic  glut  grinl
+665	1024.0	Zinc-activated channel	3	ion channel  lgic  zac
+666	1019.0	CatSper and Two-Pore channels	3	ion channel  vgc  catsper
+667	1019.0	Potassium channels	3	ion channel  vgc  k
+668	667.0	Calcium-activated potassium channel	4	ion channel  vgc  k  ca act k
+669	1019.0	Voltage-gated proton channel	3	ion channel  vgc  vg h
+670	1005.0	Other ion channel	2	ion channel  other
+671	670.0	Aquaporin	3	ion channel  other  aquaporin
+672	671.0	Aquaglyceroporin	4	ion channel  other  aquaporin  aquaglyceroporin
+673	671.0	Aquaporin 8	4	ion channel  other  aquaporin  aquaporin 8
+674	671.0	Unorthodox aquaporin	4	ion channel  other  aquaporin  unorthodox
+675	671.0	Water-specific aquaporin	4	ion channel  other  aquaporin  water-specific
+676	670.0	Chloride channel	3	ion channel  other  chloride
+677	676.0	Calcium-activated chloride channel	4	ion channel  other  chloride  ca act cl
+678	676.0	ClC chloride channel	4	ion channel  other  chloride  clc
+679	676.0	Epithelial chloride channel	4	ion channel  other  chloride  e-clc
+680	676.0	Intracellular chloride channel	4	ion channel  other  chloride  clic
+681	670.0	Gap junction protein	3	ion channel  other  gap
+682	681.0	Gap junction protein alpha	4	ion channel  other  gap  gap junction protein alpha
+683	681.0	Gap junction protein beta	4	ion channel  other  gap  gap junction protein beta
+684	681.0	Gap junction protein delta	4	ion channel  other  gap  gap junction protein delta
+685	681.0	Gap junction protein epsilon	4	ion channel  other  gap  gap junction protein epsilon
+686	681.0	Gap junction protein gamma	4	ion channel  other  gap  gap junction protein gamma
+687	681.0	Pannexin	4	ion channel  other  gap  pannexin
+688	670.0	Annexin	3	ion channel  other  annexin
+689	1032.0	SLC superfamily of solute carriers	3	transporter  electrochemical  slc
+690	689.0	SLC01 family of amino acid transporters	4	transporter  electrochemical  slc  slc01
+691	689.0	SLC02 family of hexose and sugar alcohol transporters	4	transporter  electrochemical  slc  slc02
+692	689.0	SLC03 and SLC07 families of heteromeric amino acid transporters (HATs)	4	transporter  electrochemical  slc  slc03 and slc07
+693	689.0	SLC04 family of bicarbonate transporters	4	transporter  electrochemical  slc  slc04
+694	689.0	SLC05 family of sodium-dependent glucose transporters	4	transporter  electrochemical  slc  slc05
+695	689.0	SLC06 neurotransmitter transporter family	4	transporter  electrochemical  slc  slc06
+696	689.0	SLC08 family of sodium/calcium exchangers	4	transporter  electrochemical  slc  slc08
+697	689.0	SLC09 family of sodium/hydrogen exchangers	4	transporter  electrochemical  slc  slc09
+698	689.0	SLC10 family of sodium-bile acid co-transporters	4	transporter  electrochemical  slc  slc10
+699	689.0	SLC11 family of proton-coupled metal ion transporters	4	transporter  electrochemical  slc  slc11
+700	689.0	SLC12 family of cation-coupled chloride transporters	4	transporter  electrochemical  slc  slc12
+701	689.0	SLC13 family of sodium-dependent sulphate/carboxylate transporters	4	transporter  electrochemical  slc  slc13
+702	689.0	SLC14 family of facilitative urea transporters	4	transporter  electrochemical  slc  slc14
+703	689.0	SLC15 family of peptide transporters	4	transporter  electrochemical  slc  slc15
+704	689.0	SLC16 family of monocarboxylate transporters	4	transporter  electrochemical  slc  slc16
+705	689.0	SLC17 phosphate and organic anion transporter family	4	transporter  electrochemical  slc  slc17
+706	689.0	SLC18 family of vesicular amine transporters	4	transporter  electrochemical  slc  slc18
+707	689.0	SLC19 family of vitamin transporters	4	transporter  electrochemical  slc  slc19
+708	689.0	SLC20 family of sodium-dependent phosphate transporters	4	transporter  electrochemical  slc  slc20
+709	689.0	SLC21/SLCO family of organic anion transporting polypeptides	4	transporter  electrochemical  slc  slc21
+710	689.0	SLC22 family of organic cation and anion transporters	4	transporter  electrochemical  slc  slc22
+711	689.0	SLC23 family of ascorbic acid transporters	4	transporter  electrochemical  slc  slc23
+712	689.0	SLC24 family of sodium/potassium/calcium exchangers	4	transporter  electrochemical  slc  slc24
+713	689.0	SLC25 family of mitochondrial transporters	4	transporter  electrochemical  slc  slc25
+714	689.0	SLC26 family of anion exchangers	4	transporter  electrochemical  slc  slc26
+715	689.0	SLC27 family of fatty acid transporters	4	transporter  electrochemical  slc  slc27
+716	689.0	SLC28 and SLC29 families of nucleoside transporters	4	transporter  electrochemical  slc  slc28 and slc29
+717	689.0	SLC30 zinc transporter family	4	transporter  electrochemical  slc  slc30
+718	689.0	SLC31 family of copper transporters	4	transporter  electrochemical  slc  slc31
+719	689.0	SLC32 vesicular inhibitory amino acid transporter	4	transporter  electrochemical  slc  slc32
+720	689.0	SLC33 acetylCoA transporter	4	transporter  electrochemical  slc  slc33
+721	689.0	SLC34 family of sodium phosphate co-transporters	4	transporter  electrochemical  slc  slc34
+722	689.0	SLC35 family of nucleotide sugar transporters	4	transporter  electrochemical  slc  slc35
+723	689.0	SLC36 family of proton-coupled amino acid transporters	4	transporter  electrochemical  slc  slc36
+724	689.0	SLC37 family of phosphosugar/phosphate exchangers	4	transporter  electrochemical  slc  slc37
+725	689.0	SLC38 family of sodium-dependent neutral amino acid transporters	4	transporter  electrochemical  slc  slc38
+726	689.0	SLC39 family of metal ion transporters	4	transporter  electrochemical  slc  slc39
+727	689.0	SLC40 iron transporter	4	transporter  electrochemical  slc  slc40
+728	689.0	SLC41 family of divalent cation transporters	4	transporter  electrochemical  slc  slc41
+729	689.0	SLC42 Rh ammonium transporter	4	transporter  electrochemical  slc  slc42
+730	689.0	SLC43 family of large neutral amino acid transporters	4	transporter  electrochemical  slc  slc43
+731	689.0	SLC44 choline transporter-like family	4	transporter  electrochemical  slc  slc44
+732	689.0	SLC45 family of putative sugar transporters	4	transporter  electrochemical  slc  slc45
+733	689.0	SLC46 family of folate transporters	4	transporter  electrochemical  slc  slc46
+734	689.0	SLC47 family of multidrug and toxin extrusion transporters	4	transporter  electrochemical  slc  slc47
+735	689.0	SLC48 haem transporter	4	transporter  electrochemical  slc  slc48
+736	689.0	SLC49 family of FLVCR-related haem transporters	4	transporter  electrochemical  slc  slc49
+737	689.0	SLC50 sugar transporter	4	transporter  electrochemical  slc  slc50
+738	689.0	SLC51 family of steroid-derived molecule transporters	4	transporter  electrochemical  slc  slc51
+739	689.0	SLC52 family of riboflavin transporters	4	transporter  electrochemical  slc  slc52
+740	692.0	SLC03 Heavy subunits of the heteromeric amino acid transporters	5	transporter  electrochemical  slc  slc03 and slc07  slc03
+741	692.0	SLC07 Cationic amino acid transporter/glycoprotein-associated family	5	transporter  electrochemical  slc  slc03 and slc07  slc07
+742	716.0	SLC28 Na+-coupled nucleoside transport family	5	transporter  electrochemical  slc  slc28 and slc29  slc28
+743	716.0	SLC29 Facilitative nucleoside transporter family	5	transporter  electrochemical  slc  slc28 and slc29  slc29
+744	1027.0	Oxidoreduction-driven transporters	3	transporter  ntpase  oxidoreduction
+745	1027.0	F-type and V-type ATPases	3	transporter  ntpase  f-type and v-type
+746	1104.0	ABCA subfamily	4	transporter  ntpase  atp binding cassette  abca
+747	1104.0	ABCD subfamily	4	transporter  ntpase  atp binding cassette  abcd
+748	1104.0	ABCE subfamily	4	transporter  ntpase  atp binding cassette  abce
+749	1104.0	ABCF subfamily	4	transporter  ntpase  atp binding cassette  abcf
+750	1104.0	ABCG subfamily	4	transporter  ntpase  atp binding cassette  abcg
+751	1098.0	Copper ATPase	4	transporter  ntpase  p-type atpase  cu atpase
+752	1098.0	Phospholipid-transporting ATPase	4	transporter  ntpase  p-type atpase  phospholipid atpase
+753	1098.0	Probable cation-transporting ATPase (V subfamily)	4	transporter  ntpase  p-type atpase  cation atpase
+754	1006.0	Group translocator	2	transporter  group translocator
+763	670.0	Miscellaneous ion channel	3	ion channel  other  misc
+764	763.0	Sodium leak channel, non-selective	4	ion channel  other  misc  sodium-leak
+765	763.0	Anion channel tweety family	4	ion channel  other  misc  tweety
+766	763.0	Anion channel-forming bestrophin family	4	ion channel  other  misc  bestrophin
+767	763.0	Bcl-2 family	4	ion channel  other  misc  bcl-2
+768	763.0	Ca2+ release-activated Ca2+ channel family	4	ion channel  other  misc  crac-c
+769	763.0	Calcium homeostasis modulator Ca2+ channel family	4	ion channel  other  misc  calhm-c
+770	763.0	CD20 Ca2+ channel family	4	ion channel  other  misc  cd20
+771	763.0	Cholesterol uptake protein and double stranded RNA uptake family	4	ion channel  other  misc  chup dsrna
+772	763.0	CorA metal ion transporter family	4	ion channel  other  misc  mit
+773	763.0	Golgi pH regulator family	4	ion channel  other  misc  gphr
+774	763.0	Homotrimeric cation channel family	4	ion channel  other  misc  tric
+776	763.0	Membrane Mg2+ transporter family	4	ion channel  other  misc  mmgt
+777	763.0	Mechanical nociceptor piezo family	4	ion channel  other  misc  piezo
+778	763.0	Mg2+/Ca2+ uniporter family	4	ion channel  other  misc  mcu
+780	763.0	Mitochondrial EF hand Ca2+ uptake porter/regulator family	4	ion channel  other  misc  micu
+781	763.0	Non-selective cation channel-2 family	4	ion channel  other  misc  nscc2
+782	763.0	Plasmolipin family	4	ion channel  other  misc  plasmolipin
+783	763.0	Presenilin ER Ca2+ leak channel family	4	ion channel  other  misc  presenilin
+784	763.0	Synaptic vesicle-associated Ca2+ channel flower family	4	ion channel  other  misc  flower
+785	763.0	Testis-enhanced gene transfer family	4	ion channel  other  misc  tegt
+786	763.0	Type A influenza virus matrix-2 channel family	4	ion channel  other  misc  m2-c
+787	670.0	Pore-forming toxins (proteins and peptides)	3	ion channel  other  toxin
+789	670.0	Mitochondrial and plastid porin family	3	ion channel  other  mpp
+790	789.0	Voltage-dependent anion-selective channel	4	ion channel  other  mpp  vdac
+791	670.0	Nuclear pore complex family	3	ion channel  other  npc
+792	670.0	Phospholemman family	3	ion channel  other  plm
+793	670.0	Vesicle fusion pores	3	ion channel  other  vesicle
+795	796.0	Claudin tight junction family	4	ion channel  other  paracellular  claudin
+796	670.0	Paracellular channels	3	ion channel  other  paracellular
+797	1006.0	Transmembrane 1-electron transfer carriers	2	transporter  1-electron
+799	1032.0	4 TMS multidrug endosomal transporter family	3	transporter  electrochemical  met
+800	1032.0	Amino acid-polyamine-organocation family	3	transporter  electrochemical  apc
+801	1032.0	Arsenite-antimonite efflux family	3	transporter  electrochemical  arsb
+802	1032.0	Drug/metabolite transporter superfamily	3	transporter  electrochemical  dmt
+803	1032.0	Glycoside-pentoside-hexuronide:cation symporter family	3	transporter  electrochemical  gph
+804	1032.0	Lysosomal cystine transporter family	3	transporter  electrochemical  lct
+806	1032.0	Mitochondrial inner membrane K+/H+ and Ca2+/H+ exchanger family	3	transporter  electrochemical  letm1
+807	1032.0	Mitochondrial pyruvate carrier family	3	transporter  electrochemical  mpc
+808	1032.0	Mitochondrial tricarboxylate carrier family	3	transporter  electrochemical  mtc
+809	1032.0	Monovalent cation:proton antiporter-2 family	3	transporter  electrochemical  cpa2
+810	1032.0	Multidrug/oligosaccharidyl-lipid/polysaccharide flippase superfamily	3	transporter  electrochemical  mop
+811	1032.0	Reduced folate carrier family	3	transporter  electrochemical  rfc
+812	1032.0	Vitamin A receptor/transporter family	3	transporter  electrochemical  stra6
+813	1027.0	Endoplasmic reticular retrotranslocon family	3	transporter  ntpase  errt
+814	1027.0	General secretory pathway family	3	transporter  ntpase  sec
+815	1027.0	Mitochondrial protein translocase family	3	transporter  ntpase  mpt
+816	1027.0	Nuclear mRNA exporter family	3	transporter  ntpase  nrna-e
+817	1027.0	Peroxisomal protein importer family	3	transporter  ntpase  ppi
+818	1027.0	TMS recognition/insertion complex family	3	transporter  ntpase  trc
+823	1032.0	Aromatic acid:H+ symporter family	3	transporter  electrochemical  aahs
+824	1032.0	Vesicular neurotransmitter transporter family	3	transporter  electrochemical  vnt
+825	0.0	Auxiliary transport protein	1	auxiliary transport protein
+826	825.0	Voltage-gated potassium channel beta-subunit family	2	auxiliary transport protein  kv beta
+827	825.0	Basigin family	2	auxiliary transport protein  basigin
+828	825.0	Ankyrin family	2	auxiliary transport protein  ankyrin
+829	825.0	Slow voltage-gated potassium channel accessory protein family	2	auxiliary transport protein  mink
+830	825.0	Fatty acid binding protein family	2	auxiliary transport protein  fabp
+831	825.0	Calcium-activated potassium channel auxiliary subunit slowpoke-beta family	2	auxiliary transport protein  slo beta
+832	825.0	Calcium channel auxiliary subunit gamma family	2	auxiliary transport protein  ca gamma
+833	825.0	Calcium channel auxiliary subunit beta family	2	auxiliary transport protein  ca beta
+834	825.0	Calcium channel auxiliary subunit alpha2delta family	2	auxiliary transport protein  ca alpha2delta
+835	825.0	Sodium channel auxiliary subunit beta family	2	auxiliary transport protein  na beta
+836	0.0	Epigenetic regulator	1	epigenetic regulator
+837	836.0	Reader	2	epigenetic regulator  reader
+838	836.0	Writer	2	epigenetic regulator  writer
+839	836.0	Eraser	2	epigenetic regulator  eraser
+840	839.0	Histone deacetylase	3	epigenetic regulator  eraser  hdac
+841	840.0	HDAC class I	4	epigenetic regulator  eraser  hdac  hdac class i
+842	840.0	HDAC class IIa	4	epigenetic regulator  eraser  hdac  hdac class iia
+843	840.0	HDAC class IIb	4	epigenetic regulator  eraser  hdac  hdac class iib
+844	840.0	HDAC class III	4	epigenetic regulator  eraser  hdac  hdac class iii
+845	840.0	HDAC class IV	4	epigenetic regulator  eraser  hdac  hdac class iv
+846	839.0	Lysine demethylase	3	epigenetic regulator  eraser  kdm
+847	846.0	Lysine-specific demethylase	4	epigenetic regulator  eraser  kdm  lsd
+848	846.0	Jumonji domain-containing	4	epigenetic regulator  eraser  kdm  jumonji
+849	838.0	Histone acetyltransferase	3	epigenetic regulator  writer  hat
+850	849.0	MYST family	4	epigenetic regulator  writer  hat  myst
+851	849.0	GNAT family	4	epigenetic regulator  writer  hat  gnat
+852	849.0	p300/CBP family	4	epigenetic regulator  writer  hat  p300 cbp
+853	838.0	Protein methyltransferase	3	epigenetic regulator  writer  pmt
+854	853.0	Protein arginine methyltransferase	4	epigenetic regulator  writer  pmt  prmt
+855	853.0	PR domain	4	epigenetic regulator  writer  pmt  prdm
+856	853.0	SET domain	4	epigenetic regulator  writer  pmt  set
+857	837.0	Bromodomain	3	epigenetic regulator  reader  brd
+858	837.0	Methyl-lysine/arginine binding protein	3	epigenetic regulator  reader  methyl-lysine
+859	837.0	Plant homeodomain	3	epigenetic regulator  reader  phd
+860	858.0	Tudor domain	4	epigenetic regulator  reader  methyl-lysine  tudor
+861	858.0	MBT domain	4	epigenetic regulator  reader  methyl-lysine  mbt
+862	858.0	Chromodomain	4	epigenetic regulator  reader  methyl-lysine  chromo
+863	858.0	WDR domain	4	epigenetic regulator  reader  methyl-lysine  wdr
+864	858.0	PWWP domain	4	epigenetic regulator  reader  methyl-lysine  pwwp
+883	825.0	Calcium-activated potassium channel auxiliary subunit gamma family	2	auxiliary transport protein  bk gamma
+886	849.0	SRC family	4	epigenetic regulator  writer  hat  src
+889	838.0	DNA methyltransferase	3	epigenetic regulator  writer  dnmt
+890	1264.0	Soluble guanylate cyclase	4	enzyme  lyase  guanylate cyclase  soluble guanylate cyclase
+894	837.0	Methyl-CpG-binding domain	3	epigenetic regulator  reader  mbd
+903	1079.0	Serine protease SJ clan	4	enzyme  protease  serine  sj
+904	1079.0	Serine protease SK clan	4	enzyme  protease  serine  sk
+905	1079.0	Serine protease ST clan	4	enzyme  protease  serine  st
+906	1079.0	Serine protease SO clan	4	enzyme  protease  serine  so
+907	1079.0	Serine protease SP clan	4	enzyme  protease  serine  sp
+908	1079.0	Serine protease SS clan	4	enzyme  protease  serine  ss
+909	1136.0	Serine protease S1C subfamily	5	enzyme  protease  serine  pas  s1c
+910	905.0	Serine protease S54 family	5	enzyme  protease  serine  st  s54
+911	903.0	Serine protease S16 family	5	enzyme  protease  serine  sj  s16
+912	904.0	Serine protease S14 family	5	enzyme  protease  serine  sk  s14
+913	1122.0	Serine protease S26B subfamily	5	enzyme  protease  serine  sf  s26b
+914	1122.0	Serine protease S26C subfamily	5	enzyme  protease  serine  sf  s26c
+915	1120.0	Serine protease S9C subfamily	5	enzyme  protease  serine  sc  s9c
+916	1130.0	Metallo protease M3 family	5	enzyme  protease  metallo  mae  m3
+917	1114.0	Metallo protease M14C subfamily	5	enzyme  protease  metallo  mc  m14c
+918	1114.0	Metallo protease M14D subfamily	5	enzyme  protease  metallo  mc  m14d
+919	1081.0	Metallo protease MD clan	4	enzyme  protease  metallo  md
+920	919.0	Metallo protease M15 family	5	enzyme  protease  metallo  md  m15
+921	920.0	Metallo protease M15D subfamily	6	enzyme  protease  metallo  md  m15  m15d
+922	1081.0	Metallo protease MP clan	4	enzyme  protease  metallo  mp
+923	922.0	Metallo protease M67 family	5	enzyme  protease  metallo  mp  m67
+924	923.0	Metallo protease M67A subfamily	6	enzyme  protease  metallo  mp  m67  m67a
+925	1137.0	Threonine protease T1B subfamily	5	enzyme  protease  threonine  pbt  t1b
+926	1087.0	Cysteine protease CE clan	4	enzyme  protease  cysteine  ce
+927	926.0	Cysteine protease C48 family	5	enzyme  protease  cysteine  ce  c48
+928	1110.0	Cysteine protease C1 family	5	enzyme  protease  cysteine  ca  c1
+929	1031.0	Cytochrome P450 family 27	3	enzyme  cytochrome p450  cyp_27
+930	929.0	Cytochrome P450 family 27A	4	enzyme  cytochrome p450  cyp_27  cyp_27a
+931	929.0	Cytochrome P450 family 27B	4	enzyme  cytochrome p450  cyp_27  cyp_27b
+932	1182.0	Cytochrome P450 2B11	5	enzyme  cytochrome p450  cyp_2  cyp_2b  cyp_2b11
+933	1182.0	Cytochrome P450 2B10	5	enzyme  cytochrome p450  cyp_2  cyp_2b  cyp_2b10
+934	1182.0	Cytochrome P450 2B4	5	enzyme  cytochrome p450  cyp_2  cyp_2b  cyp_2b4
+935	1183.0	Cytochrome P450 2C5	5	enzyme  cytochrome p450  cyp_2  cyp_2c  cyp_2c5
+936	1183.0	Cytochrome P450 2C6	5	enzyme  cytochrome p450  cyp_2  cyp_2c  cyp_2c6
+937	1184.0	Cytochrome P450 2D15	5	enzyme  cytochrome p450  cyp_2  cyp_2d  cyp_2d15
+938	1184.0	Cytochrome P450 2D4	5	enzyme  cytochrome p450  cyp_2  cyp_2d  cyp_2d4
+939	1186.0	Cytochrome P450 3A12	5	enzyme  cytochrome p450  cyp_3  cyp_3a  cyp_3a12
+940	1186.0	Cytochrome P450 3A11	5	enzyme  cytochrome p450  cyp_3  cyp_3a  cyp_3a11
+941	1186.0	Cytochrome P450 3A6	5	enzyme  cytochrome p450  cyp_3  cyp_3a  cyp_3a6
+942	930.0	Cytochrome P450 27A1	5	enzyme  cytochrome p450  cyp_27  cyp_27a  cyp_27a1
+943	931.0	Cytochrome P450 27B1	5	enzyme  cytochrome p450  cyp_27  cyp_27a  cyp_27b1
+944	1057.0	Cytochrome P450 family 4X	4	enzyme  cytochrome p450  cyp_4  cyp_4x
+945	944.0	Cytochrome P450 4X1	5	enzyme  cytochrome p450  cyp_4  cyp_4x  cyp_4x1
+946	1301.0	CK1 protein kinase VRK family	5	enzyme  kinase  protein kinase  ck1  vrk
+947	1136.0	Serine protease S1E subfamily	5	enzyme  protease  serine  pas  s1e
+966	837.0	Spindlin domain	3	epigenetic regulator  reader  spindlin
+967	837.0	YEATS domain	3	epigenetic regulator  reader  yeats
+1005	0.0	Ion channel	1	ion channel
+1006	0.0	Transporter	1	transporter
+1014	1024.0	IP3 receptor	3	ion channel  lgic  ip3
+1015	667.0	Inwardly rectifying potassium channel	4	ion channel  vgc  k  kir
+1016	1024.0	Ryanodine receptor	3	ion channel  lgic  ryr
+1018	1019.0	Transient receptor potential channel	3	ion channel  vgc  trp
+1019	1005.0	Voltage-gated ion channel	2	ion channel  vgc
+1020	11.0	Family A G protein-coupled receptor	2	membrane receptor  7tm1
+1021	11.0	Family B G protein-coupled receptor	2	membrane receptor  7tm2
+1022	11.0	Family C G protein-coupled receptor	2	membrane receptor  7tm3
+1023	1024.0	Acid-sensing ion channel	3	ion channel  lgic  asic
+1024	1005.0	Ligand-gated ion channel	2	ion channel  lgic
+1027	1006.0	Primary active transporter	2	transporter  ntpase
+1028	1.0	Protease	2	enzyme  protease
+1030	1.0	Phosphatase	2	enzyme  phosphatase
+1031	1.0	Cytochrome P450	2	enzyme  cytochrome p450
+1032	1006.0	Electrochemical transporter	2	transporter  electrochemical
+1033	12.0	Nuclear receptor	2	transcription factor  nuclear receptor
+1034	1.0	Phosphodiesterase	2	enzyme  phosphodiesterase
+1035	1.0	Aminoacyltransferase	2	enzyme  aminoacyltransferase
+1038	1022.0	Ion receptor (family C GPCR)	3	membrane receptor  7tm3  ion
+1040	1033.0	Nuclear hormone receptor subfamily 0	3	transcription factor  nuclear receptor  nr0
+1041	1033.0	Nuclear hormone receptor subfamily 1	3	transcription factor  nuclear receptor  nr1
+1042	1033.0	Nuclear hormone receptor subfamily 2	3	transcription factor  nuclear receptor  nr2
+1043	1033.0	Nuclear hormone receptor subfamily 3	3	transcription factor  nuclear receptor  nr3
+1044	1033.0	Nuclear hormone receptor subfamily 4	3	transcription factor  nuclear receptor  nr4
+1045	1033.0	Nuclear hormone receptor subfamily 5	3	transcription factor  nuclear receptor  nr5
+1046	1033.0	Nuclear hormone receptor subfamily 6	3	transcription factor  nuclear receptor  nr6
+1047	1024.0	P2X receptor	3	ion channel  lgic  p2x
+1053	1024.0	Ionotropic glutamate receptor	3	ion channel  lgic  glut
+1054	1031.0	Cytochrome P450 family 1	3	enzyme  cytochrome p450  cyp_1
+1055	1031.0	Cytochrome P450 family 2	3	enzyme  cytochrome p450  cyp_2
+1056	1031.0	Cytochrome P450 family 3	3	enzyme  cytochrome p450  cyp_3
+1057	1031.0	Cytochrome P450 family 4	3	enzyme  cytochrome p450  cyp_4
+1058	1031.0	Cytochrome P450 family 5	3	enzyme  cytochrome p450  cyp_5
+1059	1031.0	Cytochrome P450 family 7	3	enzyme  cytochrome p450  cyp_7
+1060	1031.0	Cytochrome P450 family 8	3	enzyme  cytochrome p450  cyp_8
+1061	1034.0	Phosphodiesterase 1	3	enzyme  phosphodiesterase  pde_1
+1062	1034.0	Phosphodiesterase 2	3	enzyme  phosphodiesterase  pde_2
+1063	1034.0	Phosphodiesterase 3	3	enzyme  phosphodiesterase  pde_3
+1064	1034.0	Phosphodiesterase 4	3	enzyme  phosphodiesterase  pde_4
+1065	1034.0	Phosphodiesterase 5	3	enzyme  phosphodiesterase  pde_5
+1066	1034.0	Phosphodiesterase 6	3	enzyme  phosphodiesterase  pde_6
+1067	1034.0	Phosphodiesterase 7	3	enzyme  phosphodiesterase  pde_7
+1068	1034.0	Phosphodiesterase 8	3	enzyme  phosphodiesterase  pde_8
+1069	1034.0	Phosphodiesterase 9	3	enzyme  phosphodiesterase  pde_9
+1070	1031.0	Cytochrome P450 family 11	3	enzyme  cytochrome p450  cyp_11
+1071	1031.0	Cytochrome P450 family 17	3	enzyme  cytochrome p450  cyp_17
+1072	1031.0	Cytochrome P450 family 19	3	enzyme  cytochrome p450  cyp_19
+1073	1031.0	Cytochrome P450 family 21	3	enzyme  cytochrome p450  cyp_21
+1074	1031.0	Cytochrome P450 family 24	3	enzyme  cytochrome p450  cyp_24
+1075	1031.0	Cytochrome P450 family 26	3	enzyme  cytochrome p450  cyp_26
+1076	1031.0	Cytochrome P450 family 51	3	enzyme  cytochrome p450  cyp_51
+1077	1034.0	Phosphodiesterase 10	3	enzyme  phosphodiesterase  pde_10
+1078	1034.0	Phosphodiesterase 11	3	enzyme  phosphodiesterase  pde_11
+1079	1028.0	Serine protease	3	enzyme  protease  serine
+1081	1028.0	Metallo protease	3	enzyme  protease  metallo
+1082	1020.0	Peptide receptor (family A GPCR)	3	membrane receptor  7tm1  peptide
+1083	1021.0	Peptide receptor (family B GPCR)	3	membrane receptor  7tm2  peptide
+1084	1028.0	Protease unclassified	3	enzyme  protease  unknown
+1085	1028.0	Aspartic protease	3	enzyme  protease  aspartic
+1087	1028.0	Cysteine protease	3	enzyme  protease  cysteine
+1088	1020.0	Small molecule receptor (family A GPCR)	3	membrane receptor  7tm1  smallmol
+1089	1022.0	Small molecule receptor (family C GPCR)	3	membrane receptor  7tm3  smallmol
+1090	1028.0	Protease inhibitor	3	enzyme  protease  inhibitor
+1091	1028.0	Threonine protease	3	enzyme  protease  threonine
+1096	745.0	F-type ATPase	4	transporter  ntpase  f-type and v-type  f-type atpase
+1098	1027.0	P-type ATPase	3	transporter  ntpase  p-type atpase
+1100	6.0	Protein Kinase	3	enzyme  kinase  protein kinase
+1103	1030.0	Protein Phosphatase	3	enzyme  phosphatase  protein phosphatase
+1104	1027.0	ATP-binding cassette	3	transporter  ntpase  atp binding cassette
+1106	1085.0	Aspartic protease AA clan	4	enzyme  protease  aspartic  aa
+1107	1085.0	Aspartic protease AD clan	4	enzyme  protease  aspartic  ad
+1108	1085.0	Aspartic protease AF clan	4	enzyme  protease  aspartic  af
+1109	1087.0	Cysteine protease CM clan	4	enzyme  protease  cysteine  cm
+1110	1087.0	Cysteine protease CA clan	4	enzyme  protease  cysteine  ca
+1111	1087.0	Cysteine protease CD clan	4	enzyme  protease  cysteine  cd
+1112	1090.0	Protease inhibitor unclassified clan	4	enzyme  protease  inhibitor  i-
+1113	1081.0	Metallo protease unclassified clan	4	enzyme  protease  metallo  m-
+1114	1081.0	Metallo protease MC clan	4	enzyme  protease  metallo  mc
+1115	1081.0	Metallo protease MF clan	4	enzyme  protease  metallo  mf
+1116	1081.0	Metallo protease MG clan	4	enzyme  protease  metallo  mg
+1117	1081.0	Metallo protease MH clan	4	enzyme  protease  metallo  mh
+1118	1081.0	Metallo protease MJ clan	4	enzyme  protease  metallo  mj
+1119	1079.0	Serine protease SB clan	4	enzyme  protease  serine  sb
+1120	1079.0	Serine protease SC clan	4	enzyme  protease  serine  sc
+1121	1079.0	Serine protease SE clan	4	enzyme  protease  serine  se
+1122	1079.0	Serine protease SF clan	4	enzyme  protease  serine  sf
+1123	1079.0	Serine protease SH clan	4	enzyme  protease  serine  sh
+1124	1079.0	Serine protease SR clan	4	enzyme  protease  serine  sr
+1125	1084.0	Protease unclassified U family	4	enzyme  protease  unknown  u-
+1126	1024.0	Nicotinic acetylcholine receptor	3	ion channel  lgic  ach
+1127	1024.0	Glycine receptor	3	ion channel  lgic  gly
+1130	1081.0	Metallo protease MAE clan	4	enzyme  protease  metallo  mae
+1131	1081.0	Metallo protease MAM clan	4	enzyme  protease  metallo  mam
+1132	1104.0	ABCB subfamily	4	transporter  ntpase  atp binding cassette  mdr
+1133	1104.0	ABCC subfamily	4	transporter  ntpase  atp binding cassette  mrp
+1135	1087.0	Cysteine protease PAC clan	4	enzyme  protease  cysteine  pac
+1136	1079.0	Serine protease PA clan	4	enzyme  protease  serine  pas
+1137	1091.0	Threonine protease PBT clan	4	enzyme  protease  threonine  pbt
+1138	1087.0	Cysteine protease PCC clan	4	enzyme  protease  cysteine  pcc
+1144	1024.0	5HT3 receptor	3	ion channel  lgic  5ht3
+1145	1053.0	AMPA receptor	4	ion channel  lgic  glut  ampa
+1146	676.0	Cystic fibrosis transmembrane conductance regulator	4	ion channel  other  chloride  cftr
+1149	1053.0	Glutamate receptor ionotropic delta-1	4	ion channel  lgic  glut  grid
+1150	1053.0	NMDA receptor	4	ion channel  lgic  glut  nmda
+1152	1040.0	Nuclear hormone receptor subfamily 0 group B	4	transcription factor  nuclear receptor  nr0  nr0b
+1153	1041.0	Nuclear hormone receptor subfamily 1 group A	4	transcription factor  nuclear receptor  nr1  nr1a
+1154	1041.0	Nuclear hormone receptor subfamily 1 group B	4	transcription factor  nuclear receptor  nr1  nr1b
+1155	1041.0	Nuclear hormone receptor subfamily 1 group C	4	transcription factor  nuclear receptor  nr1  nr1c
+1156	1041.0	Nuclear hormone receptor subfamily 1 group D	4	transcription factor  nuclear receptor  nr1  nr1d
+1157	1041.0	Nuclear hormone receptor subfamily 1 group F	4	transcription factor  nuclear receptor  nr1  nr1f
+1158	1041.0	Nuclear hormone receptor subfamily 1 group H	4	transcription factor  nuclear receptor  nr1  nr1h
+1159	1041.0	Nuclear hormone receptor subfamily 1 group I	4	transcription factor  nuclear receptor  nr1  nr1i
+1160	1042.0	Nuclear hormone receptor subfamily 2 group A	4	transcription factor  nuclear receptor  nr2  nr2a
+1161	1042.0	Nuclear hormone receptor subfamily 2 group B	4	transcription factor  nuclear receptor  nr2  nr2b
+1162	1042.0	Nuclear hormone receptor subfamily 2 group C	4	transcription factor  nuclear receptor  nr2  nr2c
+1163	1042.0	Nuclear hormone receptor subfamily 2 group E	4	transcription factor  nuclear receptor  nr2  nr2e
+1164	1042.0	Nuclear hormone receptor subfamily 2 group F	4	transcription factor  nuclear receptor  nr2  nr2f
+1165	1043.0	Nuclear hormone receptor subfamily 3 group A	4	transcription factor  nuclear receptor  nr3  nr3a
+1166	1043.0	Nuclear hormone receptor subfamily 3 group B	4	transcription factor  nuclear receptor  nr3  nr3b
+1167	1043.0	Nuclear hormone receptor subfamily 3 group C	4	transcription factor  nuclear receptor  nr3  nr3c
+1168	1044.0	Nuclear hormone receptor subfamily 4 group A	4	transcription factor  nuclear receptor  nr4  nr4a
+1169	1045.0	Nuclear hormone receptor subfamily 5 group A	4	transcription factor  nuclear receptor  nr5  nr5a
+1170	1046.0	Nuclear hormone receptor subfamily 6 group A	4	transcription factor  nuclear receptor  nr6  nr6a
+1173	1024.0	GABA-A receptor	3	ion channel  lgic  gabaa
+1175	1098.0	Calcium ATPase	4	transporter  ntpase  p-type atpase  ca atpase
+1178	1019.0	Cyclic nucleotide-regulated channel	3	ion channel  vgc  c-gmp
+1179	1054.0	Cytochrome P450 family 1A	4	enzyme  cytochrome p450  cyp_1  cyp_1a
+1180	1054.0	Cytochrome P450 family 1B	4	enzyme  cytochrome p450  cyp_1  cyp_1b
+1181	1055.0	Cytochrome P450 family 2A	4	enzyme  cytochrome p450  cyp_2  cyp_2a
+1182	1055.0	Cytochrome P450 family 2B	4	enzyme  cytochrome p450  cyp_2  cyp_2b
+1183	1055.0	Cytochrome P450 family 2C	4	enzyme  cytochrome p450  cyp_2  cyp_2c
+1184	1055.0	Cytochrome P450 family 2D	4	enzyme  cytochrome p450  cyp_2  cyp_2d
+1185	1055.0	Cytochrome P450 family 2E	4	enzyme  cytochrome p450  cyp_2  cyp_2e
+1186	1056.0	Cytochrome P450 family 3A	4	enzyme  cytochrome p450  cyp_3  cyp_3a
+1187	1057.0	Cytochrome P450 family 4A	4	enzyme  cytochrome p450  cyp_4  cyp_4a
+1188	1057.0	Cytochrome P450 family 4F	4	enzyme  cytochrome p450  cyp_4  cyp_4f
+1189	1058.0	Cytochrome P450 family 5A	4	enzyme  cytochrome p450  cyp_5  cyp_5a
+1190	1059.0	Cytochrome P450 family 7A	4	enzyme  cytochrome p450  cyp_7  cyp_7a
+1191	1060.0	Cytochrome P450 family 8A	4	enzyme  cytochrome p450  cyp_8  cyp_8a
+1218	1070.0	Cytochrome P450 family 11A	4	enzyme  cytochrome p450  cyp_11  cyp_11a
+1219	1070.0	Cytochrome P450 family 11B	4	enzyme  cytochrome p450  cyp_11  cyp_11b
+1220	1071.0	Cytochrome P450 family 17A	4	enzyme  cytochrome p450  cyp_17  cyp_17a
+1221	1072.0	Cytochrome P450 family 19A	4	enzyme  cytochrome p450  cyp_19  cyp_19a
+1222	1073.0	Cytochrome P450 family 21A	4	enzyme  cytochrome p450  cyp_21  cyp_21a
+1223	1074.0	Cytochrome P450 family 24A	4	enzyme  cytochrome p450  cyp_24  cyp_24a
+1224	1075.0	Cytochrome P450 family 26A	4	enzyme  cytochrome p450  cyp_26  cyp_26a
+1225	1076.0	Cytochrome P450 family 51A	4	enzyme  cytochrome p450  cyp_51  cyp_51a
+1226	1053.0	Kainate receptor	4	ion channel  lgic  glut  kainate
+1235	745.0	V-type ATPase	4	transporter  ntpase  f-type and v-type  v-type atpase
+1251	1083.0	Glucagon-like receptor	4	membrane receptor  7tm2  peptide  glucagon-like
+1253	1082.0	Short peptide receptor (family A GPCR)	4	membrane receptor  7tm1  peptide  short peptide
+1256	1083.0	Calcitonin-like receptor	4	membrane receptor  7tm2  peptide  calcitonin-like
+1259	1089.0	Neurotransmitter receptor (family C GPCR)	4	membrane receptor  7tm3  smallmol  neurotransmitter
+1264	648.0	Guanylate cyclase	3	enzyme  lyase  guanylate cyclase
+1265	1082.0	Chemokine receptor	4	membrane receptor  7tm1  peptide  chemokine receptor
+1266	1088.0	Monoamine receptor	4	membrane receptor  7tm1  smallmol  monoamine receptor
+1267	1088.0	Monoamine-derivative receptor (family A GPCR)	4	membrane receptor  7tm1  smallmol  monoamine-derivative
+1268	1082.0	Glycohormone receptor	4	membrane receptor  7tm1  peptide  glycohormone receptor
+1269	1082.0	Anaphylatoxin receptor family	4	membrane receptor  7tm1  peptide  anaphylatoxin receptor
+1270	1082.0	Chemokine receptor-like	4	membrane receptor  7tm1  peptide  chemokine receptor-like
+1271	1038.0	Calcium sensing receptor	4	membrane receptor  7tm3  ion  calcium sensing receptor
+1272	1088.0	Nucleotide-like receptor (family A GPCR)	4	membrane receptor  7tm1  smallmol  nucleotide-like receptor
+1273	1088.0	Lipid-like ligand receptor (family A GPCR)	4	membrane receptor  7tm1  smallmol  lipid-like ligand receptor
+1274	1082.0	Protease-activated receptor	4	membrane receptor  7tm1  peptide  protease-activated receptor
+1275	1083.0	Parathyroid hormone receptor	4	membrane receptor  7tm2  peptide  parathyroid hormone receptor
+1277	1083.0	Vasoactive intestinal peptide receptor	4	membrane receptor  7tm2  peptide  vasoactive intestinal peptide receptor
+1278	1083.0	Corticotropin releasing factor receptor	4	membrane receptor  7tm2  peptide  corticotropin releasing factor receptor
+1285	1100.0	TK protein kinase group	4	enzyme  kinase  protein kinase  tk
+1289	1100.0	AGC protein kinase group	4	enzyme  kinase  protein kinase  agc
+1301	1100.0	CK1 protein kinase group	4	enzyme  kinase  protein kinase  ck1
+1315	1264.0	Receptor guanylate cyclase	4	enzyme  lyase  guanylate cyclase  receptor guanylate cyclase
+1331	1100.0	STE protein kinase group	4	enzyme  kinase  protein kinase  ste
+1334	1100.0	TKL protein kinase group	4	enzyme  kinase  protein kinase  tkl
+1339	1100.0	CAMK protein kinase group	4	enzyme  kinase  protein kinase  camk
+1452	1100.0	Atypical protein kinase group	4	enzyme  kinase  protein kinase  atypical
+1583	1019.0	Voltage-gated calcium channel	3	ion channel  vgc  vg ca
+1590	1019.0	Voltage-gated sodium channel	3	ion channel  vgc  vg na
+1614	1285.0	Tyrosine protein kinase DDR family	5	enzyme  kinase  protein kinase  tk  ddr
+1618	1289.0	AGC protein kinase GRK family	5	enzyme  kinase  protein kinase  agc  grk
+1623	1334.0	TKL protein kinase MLK family	5	enzyme  kinase  protein kinase  tkl  mlk
+1629	158.0	Other protein kinase PEK family	5	enzyme  kinase  protein kinase  other  pek
+1638	1334.0	TKL protein kinase RAF family	5	enzyme  kinase  protein kinase  tkl  raf
+1640	148.0	CMGC protein kinase RCK family	5	enzyme  kinase  protein kinase  cmgc  rck
+1647	1452.0	Atypical protein kinase RIO family	5	enzyme  kinase  protein kinase  atypical  rio
+1648	1289.0	AGC protein kinase RSK family	5	enzyme  kinase  protein kinase  agc  rsk
+1649	1285.0	Tyrosine protein kinase Sev family	5	enzyme  kinase  protein kinase  tk  sev
+1657	158.0	Other protein kinase TLK family	5	enzyme  kinase  protein kinase  other  tlk
+1664	1452.0	Atypical protein kinase ABC1 family	5	enzyme  kinase  protein kinase  atypical  abc1
+1668	1289.0	AGC protein kinase DMPK family	5	enzyme  kinase  protein kinase  agc  dmpk
+1669	148.0	CMGC protein kinase DYRK family	5	enzyme  kinase  protein kinase  cmgc  dyrk
+1674	1334.0	TKL protein kinase IRAK family	5	enzyme  kinase  protein kinase  tkl  irak
+1678	1334.0	TKL protein kinase LISK family	5	enzyme  kinase  protein kinase  tkl  lisk
+1682	1289.0	AGC protein kinase MAST family	5	enzyme  kinase  protein kinase  agc  mast
+1684	1285.0	Tyrosine protein kinase Musk family	5	enzyme  kinase  protein kinase  tk  musk
+1686	158.0	Other protein kinase NKF4 family	5	enzyme  kinase  protein kinase  other  nkf4
+1690	1339.0	CAMK protein kinase RSKb family	5	enzyme  kinase  protein kinase  camk  rskb
+1693	1334.0	TKL protein kinase STKR family	5	enzyme  kinase  protein kinase  tkl  stkr
+1701	158.0	Other protein kinase CAMKK family	5	enzyme  kinase  protein kinase  other  camkk
+1702	1339.0	CAMK protein kinase CAMK1 family	5	enzyme  kinase  protein kinase  camk  camkl
+1710	1339.0	CAMK protein kinase DCAMK1 family	5	enzyme  kinase  protein kinase  camk  dcamkl
+1713	1339.0	CAMK protein kinase MAPKAPK family	5	enzyme  kinase  protein kinase  camk  mapkapk
+1714	1331.0	STE protein kinase unique family	5	enzyme  kinase  protein kinase  ste  ste-unique
+1715	1339.0	CAMK protein kinase unique family	5	enzyme  kinase  protein kinase  camk  camk-unique

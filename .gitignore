@@ -27,3 +27,6 @@ __pycache__/
 !database/v4/chemont_nodes.tsv
 !database/v4/chemont_edges.tsv
 !logs/v4/agent_actions.log
+
+# ChEMBL offline dump (30GB) — never commit
+data/external/chembl/

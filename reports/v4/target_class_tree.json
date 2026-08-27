@@ -1,0 +1,40 @@
+{
+  "chembl_dump": "chembl_37.db",
+  "protein_classification_tree_size": 905,
+  "tree_depth_levels": 6,
+  "distinct_targets": 1081,
+  "targets_with_protein_class": 593,
+  "targets_with_protein_class_pct": "54.9%",
+  "molecules_total_in_layer": 78,
+  "molecules_with_a_protein_class": 55,
+  "by_class_l1": {
+    "enzyme": 468,
+    "membrane receptor": 43,
+    "transporter": 19,
+    "unclassified": 19,
+    "ion channel": 15,
+    "transcription factor": 13,
+    "epigenetic regulator": 11,
+    "secreted": 2,
+    "membrane other": 1,
+    "cytosolic other": 1,
+    "nuclear other": 1
+  },
+  "by_class_l2_top": {
+    "kinase": 370,
+    "7tm1": 40,
+    "transferase": 22,
+    "reductase": 16,
+    "hydrolase": 14,
+    "electrochemical": 13,
+    "lgic": 11,
+    "nuclear receptor": 9,
+    "protease": 8,
+    "cytochrome p450": 6,
+    "lyase": 6,
+    "phosphatase": 6,
+    "reader": 4,
+    "vgc": 4,
+    "phosphodiesterase": 4
+  }
+}
