@@ -66,9 +66,13 @@ ax.text((lx0 + lx1) / 2, 0.85, "STRUCTURE", ha="center", va="center",
         fontsize=11.5, color=TEAL, fontweight="bold")
 ax.text((lx0 + lx1) / 2, 0.805, "what each molecule IS", ha="center", va="center",
         fontsize=9, color=GREY)
-Ltree = positions([1, 2, 4, 7], lx0, lx1, [0.75, 0.62, 0.49, 0.36])
-draw_tree(ax, Ltree, TEAL, node_s=70)
-ax.text((lx0 + lx1) / 2, 0.285, "deep & broad  ·  every molecule fits",
+Ltree = positions([1, 4, 7, 9], lx0, lx1, [0.75, 0.58, 0.45, 0.33])
+draw_tree(ax, Ltree, TEAL, node_s=62)
+# four short example structural families on the L1 row (same style as the right panel)
+for (x, y), lab in zip(Ltree[1], ["Aromatics", "Amines", "Acids", "Halides"]):
+    ax.text(x, y + 0.072, lab, ha="center", va="bottom", fontsize=8.2, color=DARK,
+            bbox=dict(boxstyle="round,pad=0.12", fc="white", ec="none"))
+ax.text((lx0 + lx1) / 2, 0.275, "deep & broad  ·  every molecule fits",
         ha="center", va="center", fontsize=8.5, color=DARK)
 coverage(ax, lx0, lx1, 0.16, 1.0, TEAL, "covers the WHOLE library")
 
